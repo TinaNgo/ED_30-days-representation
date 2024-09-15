@@ -5,6 +5,21 @@ from ED_preprocessing import generate_csv
 
 NON_DISCRETISED_FILE_PATH = "GeneratedData/ED.csv"
 
+numeric_columns = ['n_ed_visits',
+				'n_ed_admissions',
+				'triage_temp',
+				'triage_heartrate',
+				'triage_resprate',
+				'triage_o2sat',
+				'triage_sbp',
+				'triage_dbp',
+				'last_temp',
+				'last_heartrate',
+				'last_resprate',
+				'last_o2sat',
+				'last_sbp',
+				'last_dbp']
+
 # Discretise patient age into group
 # 18-25, 26-45, 46-65, 66-85 and 85+
 def discretise_age(dataframe: DataFrame) -> DataFrame:
@@ -112,20 +127,7 @@ def discretise_pain_category(dataframe: DataFrame) -> DataFrame:
 
 def normalise(df: DataFrame) -> DataFrame:
 	print("Normalising numerical data.....\n")
-	numeric_columns = ['n_ed_visits',
-					'n_ed_admissions',
-					'triage_temp',
-					'triage_heartrate',
-					'triage_resprate',
-					'triage_o2sat',
-					'triage_sbp',
-					'triage_dbp',
-					'last_temp',
-					'last_heartrate',
-					'last_resprate',
-					'last_o2sat',
-					'last_sbp',
-					'last_dbp']
+
 	
 	for col in numeric_columns:
 		print("Normalising '" + col + "'column")
@@ -150,8 +152,16 @@ def main():
 	discretised_set = discretised_set[cols]
 
 	generate_csv(discretised_set, 'GeneratedData/debug_discritised_ED.csv')
-	discretised_set = discretised_set.drop(columns=['age', 'LOS (hours)', 'acuity', 'presentation_hour'])
+
+	discretised_set = discretised_set.drop(columns=['age', 'LOS (hours)', 'acuity', 'presentation_hour', 'triage_pain', 'last_pain'])
+
+	for col in numeric_columns:
+		raw_col = "raw_" + col
+		discretised_set = discretised_set.drop(columns=[raw_col])
+
 	discretised_set.rename(columns={'age_group': 'age'}, inplace=True)
+	discretised_set.rename(columns={'triage_pain_discretised': 'triage_pain'}, inplace=True)
+	discretised_set.rename(columns={'last_pain_discretised': 'last_pain'}, inplace=True)
 	generate_csv(discretised_set, 'GeneratedData/fully_processed_ED.csv')
 	# unique_values = discretised_set['diagnosis_category'].value_counts().count()
 
