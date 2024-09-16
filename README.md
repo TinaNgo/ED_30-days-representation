@@ -8,17 +8,15 @@ Run the diagnosis_processing.py script to convert all diagnosis coded to ICD-10 
 python3 diagnosis_processing.py
 ```
 
+## Generate the ED dataset using mainly the files from MIMIC-IV-ED
 ```bash
-python3 ED_proprocessing.py
+python3 ED_preprocessing.py
 ```
 
+## Discretise and normalise the dataset
 ```bash
-python3 discretise.py
+python3 discretise_normalised.py
 ```
 
-```bash
-python3 apply_smote.py <path to config.ini>
-```
-
-
-python3 weka_evaluate.py <path to config.ini>
+## Next step
+fully_processed_ED.csv is the final dataset.
