@@ -342,9 +342,6 @@ def get_n_visits_admissions(edstays):
 
 	return edstays
 
-
-
-
 def main():
     # Load the edstays table into a DataFrame
 	edstays = load_edstays()
@@ -391,6 +388,7 @@ def main():
 
 	# Dropping irrelevant columns
 	edstays = edstays.drop(columns=['subject_id', 'stay_id', 'intime', 'outtime', 'dod', 'disposition', 'arrival_transport'])
+
 	generate_csv(edstays, 'GeneratedData/ED.csv')
 	
 

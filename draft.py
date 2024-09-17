@@ -1,5 +1,3 @@
-# Original code from: https://github.com/bellaanderssen/thesis23/blob/main/evaluate.py
-
 import argparse
 import helpers
 import os
@@ -9,18 +7,44 @@ from configparser import ConfigParser
 from datetime import datetime
 from weka.classifiers import Classifier, Evaluation
 from weka.core.classes import Random
+from imblearn.over_sampling import SMOTENC
+from imblearn.pipeline import Pipeline
+from sklearn.model_selection import StratifiedKFold
+import numpy as np
+import pandas as pd
 
-
-def evaluate(train_data, test_data, classifier):
+def evaluate(data, classifier):
     start_time = datetime.now()
-    classifier.build_classifier(train_data)
+    classifier.build_classifier(data)
     end_time = datetime.now()
     build_time = end_time - start_time
 
-    evaluation = Evaluation(test_data)
+    evaluation = Evaluation(data)
     start_time = datetime.now()
-    evaluation.evaluateModel(classifier, test_data)
-    
+
+    # Prepare for cross-validation with SMOTENC
+    skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
+    smote_nc = SMOTENC(categorical_features=[data.attributes.index(attr) for attr in categorical_features], random_state=42)
+
+    fold_results = []
+
+    for train_index, test_index in skf.split(data.X, data.Y):
+        X_train, X_test = data.X[train_index], data.X[test_index]
+        y_train, y_test = data.Y[train_index], data.Y[test_index]
+
+        # Apply SMOTENC to the training data
+        X_resampled, y_resampled = smote_nc.fit_resample(X_train, y_train)
+
+        # Create a new dataset for this fold
+        fold_data = data.copy()
+        fold_data.X = np.concatenate((X_resampled, X_test), axis=0)
+        fold_data.Y = np.concatenate((y_resampled, y_test), axis=0)
+
+        # Evaluate the classifier on this fold
+        classifier.build_classifier(fold_data)
+        fold_evaluation = Evaluation(fold_data)
+        fold_results.append(fold_evaluation.crossvalidate_model(classifier, fold_data, 1, Random(42)))
+
     end_time = datetime.now()
     evaluation_time = end_time - start_time
 
@@ -66,17 +90,15 @@ try:
     config.optionxform = str  # preserve case in config keys
     config.read(config_file)
     os.chdir(args.indir)  # treat contents of file relative to config.ini
-
-    train_data_filepath = config['meta']['train_data_path']
-    helpers.assert_file_exists(train_data_filepath)
-
-    test_data_filepath = config['meta']['test_data_path']
-    helpers.assert_file_exists(test_data_filepath)
+    data_filepath = config['meta']['data_path']
+    helpers.assert_file_exists(data_filepath)
 
     with helpers.JVM(max_heap_size=args.max_heap_size):
-        train_data = helpers.load_csv(train_data_filepath)
-        # data = helpers.fill_na(data)
-        
+        data = helpers.load_csv(data_filepath)
+        data = helpers.fill_na(data)
+
+        # Identify categorical features if needed
+        categorical_features = []  # Set the list of categorical feature names
 
         for section in config:
             experiment_name = section
@@ -94,7 +116,7 @@ try:
             classifier = Classifier(
                 classname=classname,
                 options=options.split(split_string))
-            evaluate(train_data, test_data, classifier)
+            evaluate(data, classifier)
 
 except Exception as e:
     with open('error.log', 'w') as f:

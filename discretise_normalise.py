@@ -161,7 +161,10 @@ def main():
 
 	discretised_set.rename(columns={'age_group': 'age'}, inplace=True)
 	discretised_set.rename(columns={'triage_pain_discretised': 'triage_pain'}, inplace=True)
-	discretised_set.rename(columns={'last_pain_discretised': 'last_pain'}, inplace=True)
+
+	# discretised_set.rename(columns={'last_pain_discretised': 'last_pain'}, inplace=True)
+	discretised_set = discretised_set.drop(columns={'last_pain_discretised'})  # 30% of values were missing so remove this
+
 	generate_csv(discretised_set, 'GeneratedData/fully_processed_ED.csv')
 	# unique_values = discretised_set['diagnosis_category'].value_counts().count()
 

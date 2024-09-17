@@ -18,5 +18,6 @@ python3 ED_preprocessing.py
 python3 discretise_normalised.py
 ```
 
+## Generate full features train and test set, with and without SMOTE_NC applied to the training set 
 ## Next step
 fully_processed_ED.csv is the final dataset.
