@@ -9,8 +9,8 @@ from weka.filters import Filter
 
 
 class JVM:
-    def __init__(self, max_heap_size="-Xmx8g"):
-        max_heap_size="8g"
+    def __init__(self, max_heap_size="-Xmx20g"):
+        max_heap_size="20g"
         self._max_heap_size = max_heap_size
 
     def __enter__(self):
