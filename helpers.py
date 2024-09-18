@@ -40,6 +40,13 @@ def assert_dir_contains_config(dirpath):
     assert_file_exists(config_path)
     return config_path
 
+def load_arff(filepath):
+    loader = Loader(classname="weka.core.converters.ArffLoader")
+    filepath = os.path.expanduser(filepath)
+    data = loader.load_file(filepath)
+    data.class_is_last()
+    return data
+
 
 def load_csv(filepath):
     filepath = os.path.expanduser(filepath)

@@ -1,5 +1,3 @@
-# Original code from: https://github.com/bellaanderssen/thesis23/blob/main/evaluate.py
-
 import argparse
 import helpers
 import os
@@ -17,9 +15,9 @@ def evaluate(train_data, test_data, classifier):
     end_time = datetime.now()
     build_time = end_time - start_time
 
-    evaluation = Evaluation(test_data)
+    evaluation = Evaluation(train_data)
     start_time = datetime.now()
-    evaluation.evaluateModel(classifier, test_data)
+    evaluation.test_model(classifier, test_data)
     
     end_time = datetime.now()
     evaluation_time = end_time - start_time
@@ -74,8 +72,11 @@ try:
     helpers.assert_file_exists(test_data_filepath)
 
     with helpers.JVM(max_heap_size=args.max_heap_size):
-        train_data = helpers.load_csv(train_data_filepath)
-        # data = helpers.fill_na(data)
+        # train_data = helpers.load_csv(train_data_filepath)
+        # test_data = helpers.load_csv(test_data_filepath)
+
+        train_data = helpers.load_arff(train_data_filepath)
+        test_data = helpers.load_arff(test_data_filepath)        
         
 
         for section in config:
@@ -94,6 +95,7 @@ try:
             classifier = Classifier(
                 classname=classname,
                 options=options.split(split_string))
+
             evaluate(train_data, test_data, classifier)
 
 except Exception as e:

@@ -74,7 +74,7 @@ def main():
     print(y_train_resampled.value_counts())
 
     # merge X and y
-    X_train_resampled['target'] = y_train_resampled
+    X_train_resampled['revisited'] = y_train_resampled
     generate_csv(X_train_resampled, OUT_PATH + 'NO_FS/train_SMOTE.csv')
 
 

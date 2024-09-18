@@ -1,0 +1,45 @@
+Classifier: weka.classifiers.rules.OneR
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.640395
+Evaluation time (HH:mm:ss): 0:00:00.076928
+
+n_ed_visits:
+	< 0.06696450000000001	-> False
+	>= 0.06696450000000001	-> True
+(276826/325145 instances correct)
+
+
+
+Correctly Classified Instances       69215               85.1489 %
+Incorrectly Classified Instances     12072               14.8511 %
+Kappa statistic                          0.2086
+Mean absolute error                      0.1485
+Root mean squared error                  0.3854
+Relative absolute error                 54.6028 %
+Root relative squared error            104.5011 %
+Total Number of Instances            81287     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.158    0.014    0.685      0.158    0.257      0.279    0.572     0.245     True
+                 0.986    0.842    0.858      0.986    0.918      0.279    0.572     0.858     False
+Weighted Avg.    0.851    0.708    0.830      0.851    0.810      0.279    0.572     0.758     
+
+[[ 2085. 11112.]
+ [  960. 67130.]]
+
+Class 0 details
+Area under ROC: 0.5719457328701022
+False negatives: 11112.0
+True negatives: 67130.0
+False positives: 960.0
+True positives: 2085.0
+
+Class 1 details
+Area under ROC: 0.5719457328701022
+False negatives: 960.0
+True negatives: 2085.0
+False positives: 11112.0
+True positives: 67130.0
+
