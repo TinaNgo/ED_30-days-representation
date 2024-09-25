@@ -12,9 +12,9 @@ vitals_valid_range = {
 def remove_under_18(dataframe):
 	# Remove patients under 18
 	count_under_18 = dataframe[dataframe['age'] < 18].shape[0]
-	print(f'\nNumber of entries where age < 18: {count_under_18}')
+	print(f'Number of entries where age < 18: {count_under_18}')
 
-	print("\nRemoving entries where patient is under 18 years old")
+	print("Removing entries where patient is under 18 years old\n")
 	return dataframe[dataframe['age'] >= 18]
 
 # Remove entries where the patient died during the stay or die within 30 days with no re-admission - because they clearly cannot be re-admitted
@@ -35,7 +35,7 @@ def remove_invalid_diagnosis(dataframe):
 
 # Remove patients that have no triage category
 def remove_no_triage_category(dataframe):
-    print("\nRemoving entries with no triage category.....\n")
+    print("Removing entries with no triage category.....\n")
     valid_rows = dataframe[dataframe['acuity'].notna()]
     return valid_rows
     
@@ -58,6 +58,7 @@ def outlier_removal_imputation(column_type, vitals_valid_range):
     return outlier_removal_imputation_single_value
 
 
+# Remove outliers in vital sign data
 def remove_outliers(df):
     for column in df.columns:
         column_type = None

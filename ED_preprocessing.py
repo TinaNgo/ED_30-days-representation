@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from exclusion import *
 import os
-
+import re
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -15,7 +15,7 @@ VITALSIGN_PATH = 'MIMIC-IV_dataset/mimic-iv-ed/ed/vitalsign.csv'
 CACHED_N_ED_STAYS = 'GeneratedData/Cached_n_edstays.csv'
 
 def convert_temp_to_celcius(df):
-	temp_columns = ['triage_temp', 'last_temp']
+	temp_columns = ['triage_temp']
 	
 	for col in temp_columns:
 		df[col] -= 32
@@ -84,47 +84,49 @@ def load_triage():
 	triage['pain'] = pd.to_numeric(triage['pain'], errors='coerce')
 	# change all invalid pain value (i.e. not in the range [0,10]) to null
 	triage['pain'] = triage['pain'].apply(lambda x: int(x) if is_valid_pain_value(x) else np.nan)
+	
 
 	return triage
 
 # Load vitalsign table from ed module
-def load_last_vital_sign():
-	print("Loading vitalsign.csv .....\n")
-	vital_sign = pd.read_csv(VITALSIGN_PATH)
-	vital_sign['charttime'] = pd.to_datetime(vital_sign['charttime'])
-	vital_sign = vital_sign.sort_values(by=['stay_id', 'charttime'])
+# def load_last_vital_sign():
+# 	print("Loading vitalsign.csv .....\n")
+# 	vital_sign = pd.read_csv(VITALSIGN_PATH)
+# 	vital_sign['charttime'] = pd.to_datetime(vital_sign['charttime'])
+# 	vital_sign = vital_sign.sort_values(by=['stay_id', 'charttime'])
 
-	# leave out the rhythm column
-	vital_sign = vital_sign.drop(columns=['rhythm'])
+# 	# leave out the rhythm column
+# 	vital_sign = vital_sign.drop(columns=['rhythm'])
 
-	# filter for the last recorded vital signs for each ED stay
-	last_vitals = vital_sign.loc[vital_sign.groupby(['subject_id', 'stay_id'])['charttime'].idxmax()]
+# 	# filter for the last recorded vital signs for each ED stay
+# 	last_vitals = vital_sign.loc[vital_sign.groupby(['subject_id', 'stay_id'])['charttime'].idxmax()]
 
-	# Make sure all vital sign value are in numeric format
-	last_vitals['temperature'] = pd.to_numeric(last_vitals['temperature'], errors='coerce')
-	last_vitals['heartrate'] = pd.to_numeric(last_vitals['heartrate'], errors='coerce')
-	last_vitals['resprate'] = pd.to_numeric(last_vitals['resprate'], errors='coerce')
-	last_vitals['o2sat'] = pd.to_numeric(last_vitals['o2sat'], errors='coerce')
-	last_vitals['sbp'] = pd.to_numeric(last_vitals['sbp'], errors='coerce')
-	last_vitals['dbp'] = pd.to_numeric(last_vitals['dbp'], errors='coerce')
-	last_vitals['pain'] = pd.to_numeric(last_vitals['pain'], errors='coerce')
+# 	# Make sure all vital sign value are in numeric format
+# 	last_vitals['temperature'] = pd.to_numeric(last_vitals['temperature'], errors='coerce')
+# 	last_vitals['heartrate'] = pd.to_numeric(last_vitals['heartrate'], errors='coerce')
+# 	last_vitals['resprate'] = pd.to_numeric(last_vitals['resprate'], errors='coerce')
+# 	last_vitals['o2sat'] = pd.to_numeric(last_vitals['o2sat'], errors='coerce')
+# 	last_vitals['sbp'] = pd.to_numeric(last_vitals['sbp'], errors='coerce')
+# 	last_vitals['dbp'] = pd.to_numeric(last_vitals['dbp'], errors='coerce')
+# 	last_vitals['pain'] = pd.to_numeric(last_vitals['pain'], errors='coerce')
 
-	# change all invalid pain value (i.e. not in the range [0,10]) to null
-	last_vitals['pain'] = last_vitals['pain'].apply(lambda x: int(x) if is_valid_pain_value(x) else np.nan)
+# 	# change all invalid pain value (i.e. not in the range [0,10]) to null
+# 	last_vitals['pain'] = last_vitals['pain'].apply(lambda x: int(x) if is_valid_pain_value(x) else np.nan)
 
-	column_rename = {
-    'temperature': 'last_temp',
-    'heartrate': 'last_heartrate',
-    'resprate': 'last_resprate',
-    'o2sat': 'last_o2sat',
-	'sbp': 'last_sbp',
-	'dbp': 'last_dbp',
-	'pain': 'last_pain'
-	}
+# 	column_rename = {
+#     'temperature': 'last_temp',
+#     'heartrate': 'last_heartrate',
+#     'resprate': 'last_resprate',
+#     'o2sat': 'last_o2sat',
+# 	'sbp': 'last_sbp',
+# 	'dbp': 'last_dbp',
+# 	'pain': 'last_pain'
+# 	}
 
-	last_vitals.rename(columns=column_rename, inplace=True)
+# 	last_vitals.rename(columns=column_rename, inplace=True)
 
-	return last_vitals
+# 	return last_vitals
+
 
 # Load dianosis table from ed module
 def load_diagnosis():
@@ -145,7 +147,7 @@ def merger_edstays_patients(ed_df, patients_df):
 def merger_edstays_triage(ed_df, triage):
 	print("Merging triage data......\n")
 
-	triage_columns = ['subject_id', 'stay_id', 'acuity', 'temperature', 'heartrate', 'resprate', 'o2sat', 'sbp', 'dbp', 'pain']
+	triage_columns = ['subject_id', 'stay_id', 'acuity', 'temperature', 'heartrate', 'resprate', 'o2sat', 'sbp', 'dbp', 'pain', 'chiefcomplaint']
 	column_rename = {
 		'temperature': 'triage_temp',
 		'heartrate': 'triage_heartrate',
@@ -342,6 +344,37 @@ def get_n_visits_admissions(edstays):
 
 	return edstays
 
+
+# Code from Xie et al.'s https://github.com/nliulab/mimic4ed-benchmark
+def encode_chief_complaint(df_master):
+	print("Encoding chief complaints.....\n")
+
+	complaint_dict = {"chiefcom_chest_pain" : "chest pain", "chiefcom_abdominal_pain" : "abdominal pain|abd pain", 
+				   "chiefcom_headache" : "headache|lightheaded", "chiefcom_shortness_of_breath" : "breath", "chiefcom_back_pain" : "back pain", "chiefcom_cough" : "cough", 
+				   "chiefcom_nausea_vomiting" : "nausea|vomit", "chiefcom_fever_chills" : "fever|chill", "chiefcom_syncope" :"syncope", "chiefcom_dizziness" : "dizz"}
+	
+	holder_list = []
+	complaint_colnames_list = list(complaint_dict.keys())
+	complaint_regex_list = list(complaint_dict.values())
+
+	for i, row in df_master.iterrows():
+		curr_patient_complaint = str(row['chiefcomplaint'])
+		curr_patient_complaint_list = [False for _ in range(len(complaint_regex_list))]
+		complaint_idx = 0
+
+		for complaint in complaint_regex_list:
+			if re.search(complaint, curr_patient_complaint, re.IGNORECASE):
+				curr_patient_complaint_list[complaint_idx] = True
+			complaint_idx += 1
+		
+		holder_list.append(curr_patient_complaint_list)
+
+	df_encoded_complaint = pd.DataFrame(holder_list, columns = complaint_colnames_list)
+
+	df_master = pd.concat([df_master,df_encoded_complaint], axis=1)
+	return df_master
+
+
 def main():
     # Load the edstays table into a DataFrame
 	edstays = load_edstays()
@@ -361,10 +394,11 @@ def main():
 	# Load and merge triage data
 	triage = load_triage()
 	edstays = merger_edstays_triage(edstays, triage)
+	edstays = encode_chief_complaint(edstays)
 
 	# Load and merge vital sign data
-	last_vitals = load_last_vital_sign()
-	edstays = merger_edstays_last_vital(edstays, last_vitals)
+	# last_vitals = load_last_vital_sign()
+	# edstays = merger_edstays_last_vital(edstays, last_vitals)
 
 	# Convert all temperature values from Fahrenheit to Celcius
 	edstays = convert_temp_to_celcius(edstays)
@@ -387,7 +421,7 @@ def main():
 	generate_csv(edstays, 'GeneratedData/ed_admission.csv')
 
 	# Dropping irrelevant columns
-	edstays = edstays.drop(columns=['subject_id', 'stay_id', 'intime', 'outtime', 'dod', 'disposition', 'arrival_transport'])
+	edstays = edstays.drop(columns=['subject_id', 'stay_id', 'intime', 'outtime', 'dod', 'disposition', 'arrival_transport', 'chiefcomplaint'])
 
 	generate_csv(edstays, 'GeneratedData/ED.csv')
 	
