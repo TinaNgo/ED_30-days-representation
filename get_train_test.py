@@ -26,10 +26,11 @@ def main():
     categorical_features = ['gender', 'separation_mode', 'race', 'arrival_mode', 'diagnosis_category', 'age', 'presentation_time', 'ED_LOS',
                         'triage_category', 'triage_pain']
     
+    # also add all chief complaint columns to categorical features
     chiefcom_columns = [col for col in X.columns if "chiefcom" in col]
     categorical_features.extend(chiefcom_columns)
    
-    numeric_features = [col for col in X.columns if col not in numeric_features]
+    numeric_features = [col for col in X.columns if col not in categorical_features]
 
     # Create imputers
     numeric_imputer = SimpleImputer(strategy='median')
@@ -49,12 +50,11 @@ def main():
 
     # Print the sizes of the splits
     print(f"Training set size: {X_train.shape}\n")
+    print(f"Testing set size: {X_test.shape}")
 
     generate_csv(X_train, OUT_PATH + 'NO_FS/train.csv')
     generate_csv(X_test, OUT_PATH + 'NO_FS/test.csv')
-
    
-    print(f"Testing set size: {X_test.shape}")
 
 if __name__ == "__main__":
     main()
