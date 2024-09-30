@@ -1,0 +1,138 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 200
+Classifier build time (HH:mm:ss): 0:04:37.892389
+Evaluation time (HH:mm:ss): 0:06:22.557422
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.7178125850533549
+    Node 2    1.8451253940424244
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.7178125850533547
+    Node 2    -1.845125394042424
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.717732490053104
+    Attrib gender=M    -0.7920107841489933
+    Attrib race=WHITE    -12.043560808200338
+    Attrib race=ASIAN    12.256326696451401
+    Attrib race=OTHER    15.179537488298783
+    Attrib race=UNKNOWN    23.430493550857573
+    Attrib race=BLACK    -12.834349515327833
+    Attrib race=HISPANIC/LATINO    -3.2507614519218198
+    Attrib separation_mode=admitted    -7.389637367639045
+    Attrib separation_mode=discharged    -8.31465148281448
+    Attrib separation_mode=left without being seen    -3.2663696910979736
+    Attrib separation_mode=expired/other    30.30978876440625
+    Attrib arrival_mode=ambulance    4.955350552294951
+    Attrib arrival_mode=other    2.2550731992266115
+    Attrib arrival_mode=unknown    -1.473829163740091
+    Attrib diagnosis_category=DIG    -2.574294140021797
+    Attrib diagnosis_category=SYM    -8.708213757451121
+    Attrib diagnosis_category=CIR    -8.520596730867357
+    Attrib diagnosis_category=INJ    -0.4207144095143174
+    Attrib diagnosis_category=MUS    -4.521021249717208
+    Attrib diagnosis_category=BLD    12.609989031292978
+    Attrib diagnosis_category=RSP    1.470920302947439
+    Attrib diagnosis_category=MBD    -2.6525944570208404
+    Attrib diagnosis_category=END    10.417012526676684
+    Attrib diagnosis_category=NVS    3.4708822758335782
+    Attrib diagnosis_category=FAC    -1.6693744966728346
+    Attrib diagnosis_category=GEN    -1.1735329447448029
+    Attrib diagnosis_category=EYE    22.076864727629534
+    Attrib diagnosis_category=SKN    -2.7775883159591475
+    Attrib diagnosis_category=PRG    5.439702878773435
+    Attrib diagnosis_category=INF    19.676754872268642
+    Attrib diagnosis_category=EAR    28.88060716464541
+    Attrib diagnosis_category=NEO    17.0465484599221
+    Attrib diagnosis_category=MAL    4.786031940723204
+    Attrib diagnosis_category=PNL    9.771189946415536
+    Attrib chiefcom_chest_pain=True    15.087250010581572
+    Attrib chiefcom_abdominal_pain=False    -3.6306572171399347
+    Attrib chiefcom_headache=True    27.652267235276323
+    Attrib chiefcom_shortness_of_breath=True    40.78557404859961
+    Attrib chiefcom_back_pain=True    11.392665893135787
+    Attrib chiefcom_cough=True    47.296871456897016
+    Attrib chiefcom_nausea_vomiting=True    33.71064556207085
+    Attrib chiefcom_fever_chills=True    13.3675124003816
+    Attrib chiefcom_syncope=True    46.349695387827
+    Attrib chiefcom_dizziness=True    39.031607761169965
+    Attrib age=46-65    -1.3435060306374844
+    Attrib age=66-85    -1.1767051705909621
+    Attrib age=18-25    13.064168069425914
+    Attrib age=26-45    2.0670894744202983
+    Attrib age=85+    4.573239367572795
+    Attrib presentation_time=evening    3.029547669915397
+    Attrib presentation_time=business hours    -0.6784105938170447
+    Attrib presentation_time=night    3.2879811647650943
+    Attrib ED_LOS=0-4    -4.258615086594985
+    Attrib ED_LOS=5-12    -9.375999613196704
+    Attrib ED_LOS=13-24    0.0404318110928714
+    Attrib ED_LOS=24+    25.07392998336124
+    Attrib triage_category=three    -9.64719335755867
+    Attrib triage_category=two    -4.574294924741024
+    Attrib triage_category=four    0.06977001591586379
+    Attrib triage_category=one    3.1023584759933676
+    Attrib triage_category=five    28.34621927053581
+    Attrib triage_pain=zero    -12.407809864496123
+    Attrib triage_pain=ten    -10.019116422471582
+    Attrib triage_pain=seven    -0.4438565603149931
+    Attrib triage_pain=five    2.7104571026981024
+    Attrib triage_pain=eight    -6.420662630710677
+    Attrib triage_pain=one    21.33199016363494
+    Attrib triage_pain=three    20.646999228993074
+    Attrib triage_pain=six    3.680877953571879
+    Attrib triage_pain=two    19.303039362822698
+    Attrib triage_pain=four    15.168490229481522
+    Attrib triage_pain=nine    -2.2027056056952383
+    Attrib n_ed_visits    -455.5418987185183
+    Attrib n_ed_admissions    -186.10149843953556
+    Attrib triage_temp    -37.33170777893991
+    Attrib triage_heartrate    -28.0505660145268
+    Attrib triage_resprate    -0.5736529078458789
+    Attrib triage_o2sat    -35.19206398289665
+    Attrib triage_sbp    8.659581708322103
+    Attrib triage_dbp    17.112805181314084
+Class False
+    Input
+    Node 0
+Class True
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       49981               61.4871 %
+Incorrectly Classified Instances     31306               38.5129 %
+Kappa statistic                          0.1346
+Mean absolute error                      0.4239
+Root mean squared error                  0.4717
+Relative absolute error                 84.7761 %
+Root relative squared error             94.3419 %
+Total Number of Instances            81287     
+
+AUC: 0.6552837524693856 (95% CI: 0.655 - 0.655)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.617    0.397    0.889      0.617    0.729      0.165    0.655     0.887     False
+                 0.603    0.383    0.234      0.603    0.337      0.165    0.655     0.287     True
+Weighted Avg.    0.615    0.395    0.783      0.615    0.665      0.165    0.655     0.790     
+
+[[42021. 26069.]
+ [ 5237.  7960.]]
+
+Class 0 details
+Area under ROC: 0.654535279088572
+False negatives: 26069.0
+True negatives: 7960.0
+False positives: 5237.0
+True positives: 42021.0
+
+Class 1 details
+Area under ROC: 0.6552816319075797
+False negatives: 5237.0
+True negatives: 42021.0
+False positives: 26069.0
+True positives: 7960.0

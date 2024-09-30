@@ -1,0 +1,62 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 10
+Classifier build time (HH:mm:ss): 0:00:00.587264
+Evaluation time (HH:mm:ss): 0:04:39.307159
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.0967389888405252
+    Node 2    3.6647478183077395
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.096738988840525
+    Node 2    -3.664747818307739
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -9.196356519050306
+    Attrib chiefcom_syncope=True    9.396668218262644
+    Attrib n_ed_visits    -17.15170417946099
+    Attrib n_ed_admissions    -4.289986706356763
+Class False
+    Input
+    Node 0
+Class True
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       69093               84.9988 %
+Incorrectly Classified Instances     12194               15.0012 %
+Kappa statistic                          0.1761
+Mean absolute error                      0.2158
+Root mean squared error                  0.352 
+Relative absolute error                 80.227  %
+Root relative squared error             95.445  %
+Total Number of Instances            81287     
+
+AUC: 0.6982129718959095 (95% CI: 0.698 - 0.698)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.990    0.872    0.854      0.990    0.917      0.258    0.698     0.901     False
+                 0.128    0.010    0.711      0.128    0.217      0.258    0.698     0.386     True
+Weighted Avg.    0.850    0.732    0.831      0.850    0.803      0.258    0.698     0.817     
+
+[[67404.   686.]
+ [11508.  1689.]]
+
+Class 0 details
+Area under ROC: 0.6981886457036118
+False negatives: 686.0
+True negatives: 1689.0
+False positives: 11508.0
+True positives: 67404.0
+
+Class 1 details
+Area under ROC: 0.6981886457036118
+False negatives: 11508.0
+True negatives: 67404.0
+False positives: 686.0
+True positives: 1689.0
+

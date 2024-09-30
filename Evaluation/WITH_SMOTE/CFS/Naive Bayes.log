@@ -1,0 +1,65 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.174410
+Evaluation time (HH:mm:ss): 0:04:44.063143
+
+Naive Bayes Classifier
+
+                     Class
+Attribute            False    True
+                     (0.5)   (0.5)
+===================================
+chiefcom_syncope
+  False             16623.0 16777.0
+  True                323.0   169.0
+  [total]           16946.0 16946.0
+
+n_ed_visits
+  mean               0.0076  0.0386
+  std. dev.          0.0186  0.0751
+  weight sum          16944   16944
+  precision          0.0008  0.0008
+
+n_ed_admissions
+  mean               0.0092   0.035
+  std. dev.          0.0262  0.0644
+  weight sum          16944   16944
+  precision          0.0028  0.0028
+
+
+
+
+Correctly Classified Instances       68053               83.7194 %
+Incorrectly Classified Instances     13234               16.2806 %
+Kappa statistic                          0.2717
+Mean absolute error                      0.2224
+Root mean squared error                  0.3734
+Relative absolute error                 44.4706 %
+Root relative squared error             74.6875 %
+Total Number of Instances            81287     
+
+AUC: 0.6755088182069716 (95% CI: 0.675 - 0.676)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.946    0.722    0.871      0.946    0.907      0.287    0.675     0.892     False
+                 0.278    0.054    0.497      0.278    0.356      0.287    0.675     0.367     True
+Weighted Avg.    0.837    0.614    0.810      0.837    0.817      0.287    0.675     0.807     
+
+[[64388.  3702.]
+ [ 9532.  3665.]]
+
+Class 0 details
+Area under ROC: 0.6754777760109233
+False negatives: 3702.0
+True negatives: 3665.0
+False positives: 9532.0
+True positives: 64388.0
+
+Class 1 details
+Area under ROC: 0.6754932180888696
+False negatives: 9532.0
+True negatives: 64388.0
+False positives: 3702.0
+True positives: 3665.0
+

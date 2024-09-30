@@ -1,0 +1,53 @@
+Classifier: weka.classifiers.trees.J48
+Options: -C 0.25
+Classifier build time (HH:mm:ss): 0:00:00.632156
+Evaluation time (HH:mm:ss): 0:04:31.768505
+
+J48 pruned tree
+------------------
+
+n_ed_visits <= 0.008929
+|   n_ed_admissions <= 0.011818: False (20188.0/7375.0)
+|   n_ed_admissions > 0.011818: True (2558.0/1208.0)
+n_ed_visits > 0.008929: True (11142.0/2923.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+
+Correctly Classified Instances       59355               73.0191 %
+Incorrectly Classified Instances     21932               26.9809 %
+Kappa statistic                          0.2491
+Mean absolute error                      0.4398
+Root mean squared error                  0.4637
+Relative absolute error                 87.9563 %
+Root relative squared error             92.7442 %
+Total Number of Instances            81287     
+
+AUC: 0.6737975445155102 (95% CI: 0.674 - 0.674)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.762    0.433    0.901      0.762    0.825      0.267    0.674     0.890     False
+                 0.567    0.238    0.316      0.567    0.406      0.267    0.674     0.268     True
+Weighted Avg.    0.730    0.401    0.806      0.730    0.757      0.267    0.674     0.789     
+
+[[51868. 16222.]
+ [ 5710.  7487.]]
+
+Class 0 details
+Area under ROC: 0.6738180825953748
+False negatives: 16222.0
+True negatives: 7487.0
+False positives: 5710.0
+True positives: 51868.0
+
+Class 1 details
+Area under ROC: 0.6738180825953748
+False negatives: 5710.0
+True negatives: 51868.0
+False positives: 16222.0
+True positives: 7487.0
+

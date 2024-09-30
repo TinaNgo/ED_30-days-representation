@@ -2,12 +2,32 @@ import argparse
 import helpers
 import os
 import sys
+import numpy as np
 
 from configparser import ConfigParser
 from datetime import datetime
 from weka.classifiers import Classifier, Evaluation
 from weka.core.classes import Random
+from sklearn.utils import resample
+from sklearn.metrics import roc_auc_score
 
+N_BOOTSTRAPS = 5000
+ALPHA = 0.05  # for 95% confidence
+
+# Function to calculate AUC with bootstrapping for confidence intervals
+# code by Jiaying (https://github.sydney.edu.au/jima2199/RPA/blob/main/MIMIC_main.py)
+def bootstrap_auc(y_test, y_prob):
+    bootstrapped_scores = []
+    for i in range(N_BOOTSTRAPS):
+        indices = resample(range(len(y_prob)), replace=True)
+        if len(np.unique(y_test[indices])) < 2:
+            continue
+        auc_score = roc_auc_score(y_test[indices], y_prob[indices])
+        bootstrapped_scores.append(auc_score)
+    sorted_scores = np.sort(bootstrapped_scores)
+    lower_bound = np.percentile(sorted_scores, (1 - ALPHA) / 2 * 100)
+    upper_bound = np.percentile(sorted_scores, (1 + ALPHA) / 2 * 100)
+    return np.mean(bootstrapped_scores), lower_bound, upper_bound
 
 def evaluate(train_data, test_data, classifier):
     start_time = datetime.now()
@@ -18,6 +38,11 @@ def evaluate(train_data, test_data, classifier):
     evaluation = Evaluation(train_data)
     start_time = datetime.now()
     evaluation.test_model(classifier, test_data)
+
+    # This next section is Jiaying's code to get auc confidence interval
+    y_prob = np.array([classifier.distribution_for_instance(test_data.get_instance(i))[1] for i in range(test_data.num_instances)])
+    y_test = np.array([test_data.get_instance(i).get_value(test_data.class_index) for i in range(test_data.num_instances)])
+    auc, ci_lower, ci_upper = bootstrap_auc(y_test, y_prob)
     
     end_time = datetime.now()
     evaluation_time = end_time - start_time
@@ -31,6 +56,7 @@ def evaluate(train_data, test_data, classifier):
         f.write(f"{classifier}\n")
         f.write(f"\n")
         f.write(f"{evaluation.summary()}\n")
+        f.write(f"AUC: {auc} (95% CI: {ci_lower:.3f} - {ci_upper:.3f})\n")
         f.write(f"{evaluation.class_details()}\n")
         f.write(f"{evaluation.confusion_matrix}\n")
         f.write("\n")

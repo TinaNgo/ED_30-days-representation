@@ -25,11 +25,17 @@ def main():
     directory_in = "TrainTestData/NO_FS/"
     
 	# Manual Feature Selection by Michael
-    directory_out = "TrainTestData/Manual_FS/"
-    col_list = ["gender", "separation_mode", "diagnosis_category", "age", "triage_category", "revisited"]
-   
-    # Load and filter the DataFrame
-    filtered_df = load_and_filter_dataframe(directory_in, directory_out, col_list)
+    manual_directory_out = "TrainTestData/Manual_FS/"
+    manual_col_list = ["gender", "separation_mode", "diagnosis_category", "age", "triage_category", "revisited"]
+    load_and_filter_dataframe(directory_in, manual_directory_out, manual_col_list)
+
+    cfs_directory_out = "TrainTestData/CFS/"
+    cfs_col_list = ["chiefcom_syncope", "n_ed_visits", "n_ed_admissions", "revisited"]
+    load_and_filter_dataframe(directory_in, cfs_directory_out, cfs_col_list)
+
+    info_gain_directory_out = "TrainTestData/InfoGain/"
+    info_gain_col_list = ["n_ed_visits", "n_ed_admissions", "diagnosis_category", "age", "race", "revisited"]
+    load_and_filter_dataframe(directory_in, info_gain_directory_out, info_gain_col_list)
     
 
 if __name__ == "__main__":

@@ -1,0 +1,213 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:54.149407
+Evaluation time (HH:mm:ss): 0:05:00.812944
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                               Class
+Variable                                       False
+====================================================
+gender=M                                     -0.1422
+race=WHITE                                   -0.0211
+race=ASIAN                                    0.0005
+race=OTHER                                    0.1097
+race=UNKNOWN                                  2.3852
+race=BLACK                                     -0.15
+race=HISPANIC/LATINO                         -0.0761
+separation_mode=admitted                     -0.0115
+separation_mode=discharged                    0.0578
+separation_mode=left without being seen      -0.3752
+separation_mode=expired/other                 0.0179
+arrival_mode=ambulance                       -0.0071
+arrival_mode=other                            0.0448
+arrival_mode=unknown                         -0.3059
+diagnosis_category=DIG                        -0.083
+diagnosis_category=SYM                       -0.0702
+diagnosis_category=CIR                        0.0042
+diagnosis_category=INJ                        0.2232
+diagnosis_category=MUS                        0.1051
+diagnosis_category=BLD                       -0.2827
+diagnosis_category=RSP                       -0.0049
+diagnosis_category=MBD                        -0.148
+diagnosis_category=END                       -0.1479
+diagnosis_category=NVS                       -0.0801
+diagnosis_category=FAC                       -0.3347
+diagnosis_category=GEN                       -0.1151
+diagnosis_category=EYE                         0.319
+diagnosis_category=SKN                       -0.1859
+diagnosis_category=PRG                        0.0284
+diagnosis_category=INF                        0.1413
+diagnosis_category=EAR                        0.1195
+diagnosis_category=NEO                        -0.327
+diagnosis_category=MAL                       -0.9528
+diagnosis_category=PNL                     1531.2162
+chiefcom_chest_pain=True                      0.1448
+chiefcom_abdominal_pain=False                -0.0022
+chiefcom_headache=True                         0.064
+chiefcom_shortness_of_breath=True            -0.1405
+chiefcom_back_pain=True                       0.0198
+chiefcom_cough=True                           0.0773
+chiefcom_nausea_vomiting=True                -0.0818
+chiefcom_fever_chills=True                   -0.0321
+chiefcom_syncope=True                         0.3875
+chiefcom_dizziness=True                       0.1745
+age=46-65                                    -0.0361
+age=66-85                                    -0.1574
+age=18-25                                     0.3041
+age=26-45                                     0.0994
+age=85+                                        -0.28
+presentation_time=evening                     0.0147
+presentation_time=business hours              0.0265
+presentation_time=night                      -0.0661
+ED_LOS=0-4                                    0.0878
+ED_LOS=5-12                                  -0.0387
+ED_LOS=13-24                                 -0.1193
+ED_LOS=24+                                   -0.0404
+triage_category=three                        -0.0226
+triage_category=two                          -0.0023
+triage_category=four                          0.0975
+triage_category=one                          -0.0169
+triage_category=five                          0.3068
+triage_pain=zero                              0.0632
+triage_pain=ten                              -0.2318
+triage_pain=seven                            -0.0285
+triage_pain=five                              0.0577
+triage_pain=eight                            -0.0855
+triage_pain=one                               0.2281
+triage_pain=three                             0.1659
+triage_pain=six                               0.0122
+triage_pain=two                               0.1794
+triage_pain=four                              0.1069
+triage_pain=nine                             -0.2002
+n_ed_visits                                 -21.3906
+n_ed_admissions                              -2.1681
+triage_temp                                    0.081
+triage_heartrate                             -1.2291
+triage_resprate                              -1.2538
+triage_o2sat                                  0.0134
+triage_sbp                                    0.6007
+triage_dbp                                    0.5973
+Intercept                                      2.172
+
+
+Odds Ratios...
+                                               Class
+Variable                                       False
+====================================================
+gender=M                                      0.8675
+race=WHITE                                    0.9791
+race=ASIAN                                    1.0005
+race=OTHER                                    1.1159
+race=UNKNOWN                                 10.8614
+race=BLACK                                    0.8607
+race=HISPANIC/LATINO                          0.9267
+separation_mode=admitted                      0.9886
+separation_mode=discharged                    1.0595
+separation_mode=left without being seen       0.6872
+separation_mode=expired/other                  1.018
+arrival_mode=ambulance                        0.9929
+arrival_mode=other                            1.0458
+arrival_mode=unknown                          0.7365
+diagnosis_category=DIG                        0.9204
+diagnosis_category=SYM                        0.9322
+diagnosis_category=CIR                        1.0042
+diagnosis_category=INJ                        1.2501
+diagnosis_category=MUS                        1.1108
+diagnosis_category=BLD                        0.7537
+diagnosis_category=RSP                        0.9951
+diagnosis_category=MBD                        0.8624
+diagnosis_category=END                        0.8625
+diagnosis_category=NVS                         0.923
+diagnosis_category=FAC                        0.7156
+diagnosis_category=GEN                        0.8912
+diagnosis_category=EYE                        1.3757
+diagnosis_category=SKN                        0.8303
+diagnosis_category=PRG                        1.0288
+diagnosis_category=INF                        1.1517
+diagnosis_category=EAR                         1.127
+diagnosis_category=NEO                        0.7211
+diagnosis_category=MAL                        0.3857
+diagnosis_category=PNL                      Infinity
+chiefcom_chest_pain=True                      1.1558
+chiefcom_abdominal_pain=False                 0.9978
+chiefcom_headache=True                        1.0661
+chiefcom_shortness_of_breath=True             0.8689
+chiefcom_back_pain=True                         1.02
+chiefcom_cough=True                           1.0804
+chiefcom_nausea_vomiting=True                 0.9214
+chiefcom_fever_chills=True                    0.9684
+chiefcom_syncope=True                         1.4733
+chiefcom_dizziness=True                       1.1906
+age=46-65                                     0.9646
+age=66-85                                     0.8543
+age=18-25                                     1.3554
+age=26-45                                     1.1045
+age=85+                                       0.7558
+presentation_time=evening                     1.0148
+presentation_time=business hours              1.0269
+presentation_time=night                        0.936
+ED_LOS=0-4                                    1.0917
+ED_LOS=5-12                                    0.962
+ED_LOS=13-24                                  0.8876
+ED_LOS=24+                                    0.9604
+triage_category=three                         0.9777
+triage_category=two                           0.9977
+triage_category=four                          1.1025
+triage_category=one                           0.9832
+triage_category=five                           1.359
+triage_pain=zero                              1.0652
+triage_pain=ten                               0.7931
+triage_pain=seven                             0.9719
+triage_pain=five                              1.0594
+triage_pain=eight                              0.918
+triage_pain=one                               1.2562
+triage_pain=three                             1.1805
+triage_pain=six                               1.0123
+triage_pain=two                               1.1965
+triage_pain=four                              1.1129
+triage_pain=nine                              0.8186
+n_ed_visits                                        0
+n_ed_admissions                               0.1144
+triage_temp                                   1.0844
+triage_heartrate                              0.2925
+triage_resprate                               0.2854
+triage_o2sat                                  1.0135
+triage_sbp                                    1.8234
+triage_dbp                                    1.8172
+
+
+
+Correctly Classified Instances       69191               85.1194 %
+Incorrectly Classified Instances     12096               14.8806 %
+Kappa statistic                          0.1941
+Mean absolute error                      0.2362
+Root mean squared error                  0.344 
+Relative absolute error                 86.8537 %
+Root relative squared error             93.2739 %
+Total Number of Instances            81287     
+
+AUC: 0.7250657168562561 (95% CI: 0.725 - 0.725)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.988    0.857    0.856      0.988    0.918      0.272    0.725     0.920     False
+                 0.143    0.012    0.705      0.143    0.238      0.272    0.725     0.416     True
+Weighted Avg.    0.851    0.719    0.832      0.851    0.807      0.272    0.725     0.838     
+
+[[67299.   791.]
+ [11305.  1892.]]
+
+Class 0 details
+Area under ROC: 0.7250744969531109
+False negatives: 791.0
+True negatives: 1892.0
+False positives: 11305.0
+True positives: 67299.0
+
+Class 1 details
+Area under ROC: 0.7250744969531109
+False negatives: 11305.0
+True negatives: 67299.0
+False positives: 791.0
+True positives: 1892.0

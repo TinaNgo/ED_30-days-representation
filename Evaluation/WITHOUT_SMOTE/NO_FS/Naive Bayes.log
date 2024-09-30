@@ -1,0 +1,239 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:01.083559
+Evaluation time (HH:mm:ss): 0:05:07.473138
+
+Naive Bayes Classifier
+
+                                  Class
+Attribute                         False     True
+                                 (0.84)   (0.16)
+=================================================
+gender
+  F                             150575.0  26574.0
+  M                             121786.0  26214.0
+  [total]                       272361.0  52788.0
+
+race
+  WHITE                         158478.0  29795.0
+  ASIAN                          12506.0   1735.0
+  OTHER                          16862.0   2355.0
+  UNKNOWN                         4176.0     72.0
+  BLACK                          58016.0  14261.0
+  HISPANIC/LATINO                22327.0   4574.0
+  [total]                       272365.0  52792.0
+
+separation_mode
+  admitted                      100180.0  22199.0
+  discharged                    162760.0  27385.0
+  left without being seen         7363.0   2894.0
+  expired/other                   2060.0    312.0
+  [total]                       272363.0  52790.0
+
+arrival_mode
+  ambulance                      94542.0  21495.0
+  other                         169764.0  29483.0
+  unknown                         8056.0   1811.0
+  [total]                       272362.0  52789.0
+
+diagnosis_category
+  DIG                            19491.0   4156.0
+  SYM                            66409.0  14177.0
+  CIR                            30010.0   5540.0
+  INJ                            45533.0   5468.0
+  MUS                            23283.0   4114.0
+  BLD                             2743.0    791.0
+  RSP                            14230.0   2809.0
+  MBD                            15226.0   4740.0
+  END                             5397.0   1496.0
+  NVS                            14332.0   2814.0
+  FAC                             2591.0    524.0
+  GEN                            13732.0   2973.0
+  EYE                             2571.0    260.0
+  SKN                             7965.0   1649.0
+  PRG                             4263.0    533.0
+  INF                             2558.0    441.0
+  EAR                             1449.0    165.0
+  NEO                              568.0    140.0
+  MAL                               25.0     15.0
+  PNL                                3.0      1.0
+  [total]                       272379.0  52806.0
+
+chiefcom_chest_pain
+  False                         252991.0  49137.0
+  True                           19370.0   3651.0
+  [total]                       272361.0  52788.0
+
+chiefcom_abdominal_pain
+  True                           30688.0   7040.0
+  False                         241673.0  45748.0
+  [total]                       272361.0  52788.0
+
+chiefcom_headache
+  False                         261766.0  50983.0
+  True                           10595.0   1805.0
+  [total]                       272361.0  52788.0
+
+chiefcom_shortness_of_breath
+  False                         271634.0  52595.0
+  True                             727.0    193.0
+  [total]                       272361.0  52788.0
+
+chiefcom_back_pain
+  False                         261314.0  50770.0
+  True                           11047.0   2018.0
+  [total]                       272361.0  52788.0
+
+chiefcom_cough
+  False                         266644.0  51672.0
+  True                            5717.0   1116.0
+  [total]                       272361.0  52788.0
+
+chiefcom_nausea_vomiting
+  False                         265919.0  51318.0
+  True                            6442.0   1470.0
+  [total]                       272361.0  52788.0
+
+chiefcom_fever_chills
+  False                         263245.0  50791.0
+  True                            9116.0   1997.0
+  [total]                       272361.0  52788.0
+
+chiefcom_syncope
+  False                         266840.0  52153.0
+  True                            5521.0    635.0
+  [total]                       272361.0  52788.0
+
+chiefcom_dizziness
+  False                         265167.0  51682.0
+  True                            7194.0   1106.0
+  [total]                       272361.0  52788.0
+
+age
+  46-65                          86191.0  19819.0
+  66-85                          61942.0  13181.0
+  18-25                          35719.0   3767.0
+  26-45                          72572.0  12512.0
+  85+                            15940.0   3512.0
+  [total]                       272364.0  52791.0
+
+presentation_time
+  evening                        84452.0  16304.0
+  business hours                139707.0  26083.0
+  night                          48203.0  10402.0
+  [total]                       272362.0  52789.0
+
+ED_LOS
+  0-4                           104866.0  15947.0
+  5-12                          137113.0  29349.0
+  13-24                          23329.0   5966.0
+  24+                             7055.0   1528.0
+  [total]                       272363.0  52790.0
+
+triage_category
+  three                         147866.0  29337.0
+  two                            89572.0  17997.0
+  four                           19748.0   2563.0
+  one                            14497.0   2792.0
+  five                             681.0    102.0
+  [total]                       272364.0  52791.0
+
+triage_pain
+  zero                          110741.0  22027.0
+  ten                            25274.0   6941.0
+  seven                          20989.0   3865.0
+  five                           19826.0   3128.0
+  eight                          27065.0   5695.0
+  one                             4198.0    491.0
+  three                          11203.0   1472.0
+  six                            16962.0   2825.0
+  two                             9702.0   1218.0
+  four                           13533.0   1938.0
+  nine                           12877.0   3197.0
+  [total]                       272370.0  52797.0
+
+n_ed_visits
+  mean                            0.0076   0.0397
+  std. dev.                       0.0186   0.0787
+  weight sum                      272359    52786
+  precision                       0.0091   0.0091
+
+n_ed_admissions
+  mean                            0.0094   0.0364
+  std. dev.                       0.0272   0.0696
+  weight sum                      272359    52786
+  precision                       0.0263   0.0263
+
+triage_temp
+  mean                            0.5913   0.5912
+  std. dev.                       0.0296   0.0298
+  weight sum                      272359    52786
+  precision                       0.0027   0.0027
+
+triage_heartrate
+  mean                            0.3279   0.3362
+  std. dev.                       0.0683    0.069
+  weight sum                      272359    52786
+  precision                       0.0049   0.0049
+
+triage_resprate
+  mean                            0.0842   0.0849
+  std. dev.                        0.011   0.0112
+  weight sum                      272359    52786
+  precision                       0.0137   0.0137
+
+triage_o2sat
+  mean                            0.9845   0.9826
+  std. dev.                       0.0235   0.0233
+  weight sum                      272359    52786
+  precision                       0.0147   0.0147
+
+triage_sbp
+  mean                            0.4315   0.4293
+  std. dev.                       0.0704   0.0737
+  weight sum                      272359    52786
+  precision                       0.0039   0.0039
+
+triage_dbp
+  mean                            0.2072   0.2063
+  std. dev.                       0.0388   0.0412
+  weight sum                      272359    52786
+  precision                       0.0046   0.0046
+
+
+
+
+Correctly Classified Instances       68532               84.3087 %
+Incorrectly Classified Instances     12755               15.6913 %
+Kappa statistic                          0.2595
+Mean absolute error                      0.1702
+Root mean squared error                  0.3778
+Relative absolute error                 62.594  %
+Root relative squared error            102.4503 %
+Total Number of Instances            81287     
+
+AUC: 0.7059532012161137 (95% CI: 0.706 - 0.706)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.959    0.757    0.867      0.959    0.911      0.286    0.706     0.912     False
+                 0.243    0.041    0.537      0.243    0.334      0.286    0.706     0.395     True
+Weighted Avg.    0.843    0.641    0.814      0.843    0.817      0.286    0.706     0.828     
+
+[[65328.  2762.]
+ [ 9993.  3204.]]
+
+Class 0 details
+Area under ROC: 0.7059018940839269
+False negatives: 2762.0
+True negatives: 3204.0
+False positives: 9993.0
+True positives: 65328.0
+
+Class 1 details
+Area under ROC: 0.7059045343498485
+False negatives: 9993.0
+True negatives: 65328.0
+False positives: 2762.0
+True positives: 3204.0
+

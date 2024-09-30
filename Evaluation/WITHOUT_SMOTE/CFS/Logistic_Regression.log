@@ -1,0 +1,60 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.718887
+Evaluation time (HH:mm:ss): 0:04:41.641722
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                            Class
+Variable                    False
+=================================
+chiefcom_syncope=True       0.454
+n_ed_visits              -21.7798
+n_ed_admissions           -4.2508
+Intercept                  2.0864
+
+
+Odds Ratios...
+                            Class
+Variable                    False
+=================================
+chiefcom_syncope=True      1.5747
+n_ed_visits                     0
+n_ed_admissions            0.0143
+
+
+
+Correctly Classified Instances       69124               85.037  %
+Incorrectly Classified Instances     12163               14.963  %
+Kappa statistic                          0.1852
+Mean absolute error                      0.2362
+Root mean squared error                  0.3463
+Relative absolute error                 87.8369 %
+Root relative squared error             93.9123 %
+Total Number of Instances            81287     
+
+AUC: 0.7010977020631124 (95% CI: 0.701 - 0.701)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.989    0.864    0.855      0.989    0.917      0.264    0.701     0.901     False
+                 0.136    0.011    0.702      0.136    0.228      0.264    0.701     0.389     True
+Weighted Avg.    0.850    0.725    0.830      0.850    0.805      0.264    0.701     0.818     
+
+[[67326.   764.]
+ [11399.  1798.]]
+
+Class 0 details
+Area under ROC: 0.7011218348010819
+False negatives: 764.0
+True negatives: 1798.0
+False positives: 11399.0
+True positives: 67326.0
+
+Class 1 details
+Area under ROC: 0.7011218348010819
+False negatives: 11399.0
+True negatives: 67326.0
+False positives: 764.0
+True positives: 1798.0
+

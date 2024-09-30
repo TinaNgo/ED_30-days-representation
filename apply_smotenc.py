@@ -13,13 +13,20 @@ def apply_smotenc(original_train_file, out_path):
     X = df.drop(columns='revisited')
     y = df['revisited']
 
+
+    # For Full Feature Dataset
     categorical_features = ['gender', 'separation_mode', 'race', 'arrival_mode', 'diagnosis_category', 'age', 'presentation_time', 'ED_LOS',
                         'triage_category', 'triage_pain']
     
     chiefcom_columns = [col for col in X.columns if "chiefcom" in col]
     categorical_features.extend(chiefcom_columns)
    
-    numeric_features = [col for col in X.columns if col not in numeric_features]
+    categorical_features1 = []
+    for col in categorical_features:
+        if col in X.columns:
+            categorical_features1.append(col)
+
+    categorical_features = categorical_features1
 
     # Print the sizes of the splits
     print(f"Training set before applying SMOTE_NC size: {X.shape}\n")
@@ -31,7 +38,7 @@ def apply_smotenc(original_train_file, out_path):
     categorical_features_indices = [list(X.columns).index(col) for col in categorical_features]
 
     # Apply SMOTENC to training set
-    print("Applying SMOTENC to training set.....\n")
+    print("\nApplying SMOTENC to training set.....\n")
     smote_nc = SMOTENC(categorical_features=categorical_features_indices, random_state=42)
     X_train_resampled, y_train_resampled = smote_nc.fit_resample(X, y)
 
@@ -40,14 +47,22 @@ def apply_smotenc(original_train_file, out_path):
 
     # merge X and y
     X_train_resampled['revisited'] = y_train_resampled
-    generate_csv(X_train_resampled, out_path + 'NO_FS/train_SMOTE.csv')
+    generate_csv(X_train_resampled, out_path + 'train_SMOTE.csv')
 
 def main():
     # Change these varibles to generate smote for a different file.
-	original_train_file = 'TrainTestData/fully_processed_ED.csv'
-	out_path = 'TrainTestData/'
+	# original_train_file = 'TrainTestData/NO_FS/train.csv'
+	# out_path = 'TrainTestData/NO_FS/'
+	
+    # CFS dataset
+    # original_train_file = 'TrainTestData/CFS/train.csv'
+    # out_path = 'TrainTestData/CFS/'
+
+    # Information Gain dataset
+    original_train_file = 'TrainTestData/InfoGain/train.csv'
+    out_path = 'TrainTestData/InfoGain/'
     
-	apply_smotenc(original_train_file, out_path)
+    apply_smotenc(original_train_file, out_path)
 
 if __name__ == "__main__":
 	main()

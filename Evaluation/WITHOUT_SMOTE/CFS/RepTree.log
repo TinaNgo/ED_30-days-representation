@@ -1,0 +1,97 @@
+Classifier: weka.classifiers.trees.REPTree
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.194111
+Evaluation time (HH:mm:ss): 0:03:49.496896
+
+
+REPTree
+============
+
+n_ed_visits < 0.03 : False (12077/1458) [6080/740]
+n_ed_visits >= 0.03
+|   n_ed_visits < 0.08
+|   |   n_ed_visits < 0.05 : False (555/188) [252/98]
+|   |   n_ed_visits >= 0.05
+|   |   |   n_ed_admissions < 0.17
+|   |   |   |   chiefcom_syncope = False
+|   |   |   |   |   n_ed_visits < 0.08
+|   |   |   |   |   |   n_ed_admissions < 0.04
+|   |   |   |   |   |   |   n_ed_visits < 0.07
+|   |   |   |   |   |   |   |   n_ed_visits < 0.06
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : False (24/9) [7/2]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : True (13/6) [10/4]
+|   |   |   |   |   |   |   |   n_ed_visits >= 0.06 : False (28/14) [26/9]
+|   |   |   |   |   |   |   n_ed_visits >= 0.07 : True (31/11) [8/3]
+|   |   |   |   |   |   n_ed_admissions >= 0.04
+|   |   |   |   |   |   |   n_ed_visits < 0.06
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.12 : False (69/34) [29/9]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.12 : False (36/20) [19/6]
+|   |   |   |   |   |   |   n_ed_visits >= 0.06
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.09
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.07
+|   |   |   |   |   |   |   |   |   |   n_ed_visits < 0.07 : True (11/5) [3/1]
+|   |   |   |   |   |   |   |   |   |   n_ed_visits >= 0.07 : True (16/9) [3/0]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : False (31/10) [6/2]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.09
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.14 : True (44/21) [20/5]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.14 : False (24/10) [6/5]
+|   |   |   |   |   n_ed_visits >= 0.08
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (13/4) [1/1]
+|   |   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   |   n_ed_admissions < 0.09 : True (11/4) [12/6]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.09
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.14 : False (12/4) [7/4]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.14 : True (5/2) [2/0]
+|   |   |   |   chiefcom_syncope = True : False (3/0) [2/0]
+|   |   |   n_ed_admissions >= 0.17 : False (44/17) [27/11]
+|   n_ed_visits >= 0.08
+|   |   n_ed_visits < 0.28
+|   |   |   n_ed_visits < 0.1 : True (95/37) [46/19]
+|   |   |   n_ed_visits >= 0.1
+|   |   |   |   n_ed_admissions < 0.41
+|   |   |   |   |   n_ed_admissions < 0.22
+|   |   |   |   |   |   n_ed_visits < 0.25
+|   |   |   |   |   |   |   n_ed_visits < 0.25 : True (159/35) [77/23]
+|   |   |   |   |   |   |   n_ed_visits >= 0.25 : False (4/2) [1/0]
+|   |   |   |   |   |   n_ed_visits >= 0.25 : True (9/1) [6/1]
+|   |   |   |   |   n_ed_admissions >= 0.22 : True (38/13) [26/7]
+|   |   |   |   n_ed_admissions >= 0.41 : True (5/0) [4/0]
+|   |   n_ed_visits >= 0.28 : True (55/2) [27/3]
+
+Size of the tree : 51
+
+
+Correctly Classified Instances       69139               85.0554 %
+Incorrectly Classified Instances     12148               14.9446 %
+Kappa statistic                          0.2012
+Mean absolute error                      0.2391
+Root mean squared error                  0.3488
+Relative absolute error                 88.9057 %
+Root relative squared error             94.5881 %
+Total Number of Instances            81287     
+
+AUC: 0.6211054990782267 (95% CI: 0.621 - 0.621)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.986    0.847    0.857      0.986    0.917      0.272    0.621     0.872     False
+                 0.153    0.014    0.676      0.153    0.249      0.272    0.621     0.311     True
+Weighted Avg.    0.851    0.712    0.828      0.851    0.809      0.272    0.621     0.781     
+
+[[67126.   964.]
+ [11184.  2013.]]
+
+Class 0 details
+Area under ROC: 0.621115009505013
+False negatives: 964.0
+True negatives: 2013.0
+False positives: 11184.0
+True positives: 67126.0
+
+Class 1 details
+Area under ROC: 0.621115009505013
+False negatives: 11184.0
+True negatives: 67126.0
+False positives: 964.0
+True positives: 2013.0
+

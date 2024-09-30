@@ -1,0 +1,69 @@
+Classifier: weka.classifiers.trees.REPTree
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.418984
+Evaluation time (HH:mm:ss): 0:04:48.817701
+
+
+REPTree
+============
+
+n_ed_visits < 0.01
+|   n_ed_visits < 0 : False (11188/3867) [5581/1926]
+|   n_ed_visits >= 0
+|   |   n_ed_admissions < 0.01 : False (2283/1067) [1136/515]
+|   |   n_ed_admissions >= 0.01 : True (1670/789) [888/419]
+n_ed_visits >= 0.01
+|   n_ed_visits < 0.06
+|   |   n_ed_visits < 0.03
+|   |   |   n_ed_admissions < 0.01
+|   |   |   |   chiefcom_syncope = False : True (1098/463) [541/224]
+|   |   |   |   chiefcom_syncope = True : False (5/0) [2/0]
+|   |   |   n_ed_admissions >= 0.01 : True (2281/832) [1107/412]
+|   |   n_ed_visits >= 0.03
+|   |   |   n_ed_admissions < 0.01 : True (321/101) [161/40]
+|   |   |   n_ed_admissions >= 0.01
+|   |   |   |   n_ed_visits < 0.04 : True (7/0) [1/0]
+|   |   |   |   n_ed_visits >= 0.04
+|   |   |   |   |   chiefcom_syncope = False : True (1389/328) [724/160]
+|   |   |   |   |   chiefcom_syncope = True
+|   |   |   |   |   |   n_ed_visits < 0.05 : True (8/3) [10/3]
+|   |   |   |   |   |   n_ed_visits >= 0.05 : False (3/0) [1/0]
+|   n_ed_visits >= 0.06 : True (2339/235) [1144/111]
+
+Size of the tree : 23
+
+
+Correctly Classified Instances       59393               73.0658 %
+Incorrectly Classified Instances     21894               26.9342 %
+Kappa statistic                          0.2494
+Mean absolute error                      0.4273
+Root mean squared error                  0.4522
+Relative absolute error                 85.4504 %
+Root relative squared error             90.4474 %
+Total Number of Instances            81287     
+
+AUC: 0.6999194702942417 (95% CI: 0.700 - 0.700)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.762    0.433    0.901      0.762    0.826      0.267    0.700     0.900     False
+                 0.567    0.238    0.316      0.567    0.406      0.267    0.700     0.353     True
+Weighted Avg.    0.731    0.402    0.806      0.731    0.758      0.267    0.700     0.811     
+
+[[51916. 16174.]
+ [ 5720.  7477.]]
+
+Class 0 details
+Area under ROC: 0.6999679056063034
+False negatives: 16174.0
+True negatives: 7477.0
+False positives: 5720.0
+True positives: 51916.0
+
+Class 1 details
+Area under ROC: 0.6999679056063034
+False negatives: 5720.0
+True negatives: 51916.0
+False positives: 16174.0
+True positives: 7477.0
+

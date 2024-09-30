@@ -18,4 +18,4 @@ pip install --user python-weka-wrapper3
 pip install pandas scikit-learn imbalanced-learn
 
 cd $PBS_O_WORKDIR
-python /project/RDS-FEI-MIMIC_dataset-RW/weka_evaluate.py Evaluation/WITHOUT_SMOTE/NO_FS/DECISION_TREE/
+python /project/RDS-FEI-MIMIC_dataset-RW/weka_evaluate.py Evaluation/WITHOUT_SMOTE/NO_FS/DecisionTree/
