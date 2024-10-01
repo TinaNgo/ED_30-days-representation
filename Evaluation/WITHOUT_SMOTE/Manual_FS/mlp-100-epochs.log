@@ -1,0 +1,94 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 100
+Classifier build time (HH:mm:ss): 0:00:02.587958
+Evaluation time (HH:mm:ss): 0:05:46.777969
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.324409415406617
+    Node 2    0.8753857265828143
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.3244094154066173
+    Node 2    -0.8753857265828143
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.11103373094004372
+    Attrib gender=M    -0.2609941754212215
+    Attrib separation_mode=admitted    -1.4442652114776973
+    Attrib separation_mode=discharged    2.6383005618717896
+    Attrib separation_mode=left without being seen    -3.292663821683891
+    Attrib separation_mode=expired/other    1.8549105260706136
+    Attrib diagnosis_category=DIG    -0.2324631480690049
+    Attrib diagnosis_category=SYM    -2.9851246024309055
+    Attrib diagnosis_category=CIR    4.163703331306213
+    Attrib diagnosis_category=INJ    5.110484321519486
+    Attrib diagnosis_category=MUS    -0.6589389100447308
+    Attrib diagnosis_category=BLD    -1.2991896908031955
+    Attrib diagnosis_category=RSP    0.6598427938699494
+    Attrib diagnosis_category=MBD    -6.279634866771189
+    Attrib diagnosis_category=END    -0.5451994814955149
+    Attrib diagnosis_category=NVS    0.32788434156618557
+    Attrib diagnosis_category=FAC    1.0305793511520709
+    Attrib diagnosis_category=GEN    -2.501017396523853
+    Attrib diagnosis_category=EYE    4.7705054262921145
+    Attrib diagnosis_category=SKN    -5.732300458321198
+    Attrib diagnosis_category=PRG    2.6522775966627417
+    Attrib diagnosis_category=INF    -1.9689220807464174
+    Attrib diagnosis_category=EAR    1.3366279200405855
+    Attrib diagnosis_category=NEO    0.8309554723211333
+    Attrib diagnosis_category=MAL    -0.5815360390928248
+    Attrib diagnosis_category=PNL    0.04817009569480167
+    Attrib age=46-65    -3.622305560814654
+    Attrib age=66-85    -2.432681887917968
+    Attrib age=18-25    7.217649189670938
+    Attrib age=26-45    0.817861099613182
+    Attrib age=85+    -2.308096452838302
+    Attrib triage_category=three    -0.7345759092197526
+    Attrib triage_category=two    0.008062957573452616
+    Attrib triage_category=four    0.6661055440623992
+    Attrib triage_category=one    0.11234740427505185
+    Attrib triage_category=five    -0.38555270652832263
+Class False
+    Input
+    Node 0
+Class True
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       68090               83.7649 %
+Incorrectly Classified Instances     13197               16.2351 %
+Kappa statistic                          0     
+Mean absolute error                      0.259 
+Root mean squared error                  0.367 
+Relative absolute error                 96.314  %
+Root relative squared error             99.5117 %
+Total Number of Instances            81287     
+
+AUC: 0.5950100160492608 (95% CI: 0.595 - 0.595)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.838      1.000    0.912      ?        0.595     0.879     False
+                 0.000    0.000    ?          0.000    ?          ?        0.595     0.214     True
+Weighted Avg.    0.838    0.838    ?          0.838    ?          ?        0.595     0.771     
+
+[[68090.     0.]
+ [13197.     0.]]
+
+Class 0 details
+Area under ROC: 0.5949827958714543
+False negatives: 0.0
+True negatives: 0.0
+False positives: 13197.0
+True positives: 68090.0
+
+Class 1 details
+Area under ROC: 0.594982897141928
+False negatives: 13197.0
+True negatives: 68090.0
+False positives: 0.0
+True positives: 0.0
+

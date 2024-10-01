@@ -1,0 +1,100 @@
+Classifier: weka.classifiers.trees.REPTree
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.323725
+Evaluation time (HH:mm:ss): 0:04:15.811650
+
+
+REPTree
+============
+
+age = 46-65
+|   diagnosis_category = DIG : False (332/52) [159/34]
+|   diagnosis_category = SYM : False (1183/224) [511/105]
+|   diagnosis_category = CIR : False (486/87) [300/37]
+|   diagnosis_category = INJ : False (624/77) [277/33]
+|   diagnosis_category = MUS : False (416/72) [238/44]
+|   diagnosis_category = BLD : False (41/7) [22/4]
+|   diagnosis_category = RSP : False (216/39) [114/16]
+|   diagnosis_category = MBD
+|   |   separation_mode = admitted : False (75/12) [40/7]
+|   |   separation_mode = discharged : False (173/82) [98/37]
+|   |   separation_mode = left without being seen : True (32/14) [12/3]
+|   |   separation_mode = expired/other : False (1/0) [0/0]
+|   diagnosis_category = END : False (113/21) [56/14]
+|   diagnosis_category = NVS : False (236/44) [108/14]
+|   diagnosis_category = FAC : False (33/5) [11/2]
+|   diagnosis_category = GEN : False (192/36) [100/18]
+|   diagnosis_category = EYE : False (38/5) [16/2]
+|   diagnosis_category = SKN : False (124/26) [74/10]
+|   diagnosis_category = PRG : False (1/0) [2/0]
+|   diagnosis_category = INF : False (48/7) [21/3]
+|   diagnosis_category = EAR : False (24/1) [6/1]
+|   diagnosis_category = NEO : False (7/1) [7/2]
+|   diagnosis_category = MAL : False (0/0) [0/0]
+|   diagnosis_category = PNL : False (0/0) [0/0]
+age = 66-85 : False (3093/529) [1526/252]
+age = 18-25
+|   diagnosis_category = DIG : False (64/7) [39/6]
+|   diagnosis_category = SYM : False (348/30) [182/18]
+|   diagnosis_category = CIR : False (68/3) [35/2]
+|   diagnosis_category = INJ : False (360/20) [171/12]
+|   diagnosis_category = MUS : False (87/7) [33/4]
+|   diagnosis_category = BLD
+|   |   separation_mode = admitted : False (8/2) [3/0]
+|   |   separation_mode = discharged : True (2/0) [1/0]
+|   |   separation_mode = left without being seen : False (0/0) [0/0]
+|   |   separation_mode = expired/other : False (0/0) [0/0]
+|   diagnosis_category = RSP : False (84/8) [52/4]
+|   diagnosis_category = MBD : False (218/15) [103/10]
+|   diagnosis_category = END : False (11/2) [10/0]
+|   diagnosis_category = NVS : False (85/7) [45/5]
+|   diagnosis_category = FAC : False (30/1) [20/2]
+|   diagnosis_category = GEN : False (93/9) [47/9]
+|   diagnosis_category = EYE : False (19/0) [7/1]
+|   diagnosis_category = SKN : False (43/5) [31/3]
+|   diagnosis_category = PRG : False (54/10) [30/4]
+|   diagnosis_category = INF : False (11/1) [8/1]
+|   diagnosis_category = EAR : False (6/0) [8/1]
+|   diagnosis_category = NEO : False (0/0) [0/0]
+|   diagnosis_category = MAL : False (0/0) [0/0]
+|   diagnosis_category = PNL : False (0/0) [0/0]
+age = 26-45 : False (3526/494) [1793/268]
+age = 85+ : False (807/148) [391/64]
+
+Size of the tree : 54
+
+
+Correctly Classified Instances       68120               83.8018 %
+Incorrectly Classified Instances     13167               16.1982 %
+Kappa statistic                          0.0108
+Mean absolute error                      0.2635
+Root mean squared error                  0.3654
+Relative absolute error                 97.9724 %
+Root relative squared error             99.0666 %
+Total Number of Instances            81287     
+
+AUC: 0.5768717882894343 (95% CI: 0.577 - 0.577)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.999    0.992    0.839      0.999    0.912      0.053    0.577     0.868     False
+                 0.008    0.001    0.589      0.008    0.015      0.053    0.577     0.211     True
+Weighted Avg.    0.838    0.832    0.798      0.838    0.766      0.053    0.577     0.761     
+
+[[68021.    69.]
+ [13098.    99.]]
+
+Class 0 details
+Area under ROC: 0.5769323911529091
+False negatives: 69.0
+True negatives: 99.0
+False positives: 13098.0
+True positives: 68021.0
+
+Class 1 details
+Area under ROC: 0.5769323911529091
+False negatives: 13098.0
+True negatives: 68021.0
+False positives: 69.0
+True positives: 99.0
+

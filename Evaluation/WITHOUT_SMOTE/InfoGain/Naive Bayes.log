@@ -1,0 +1,100 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.124457
+Evaluation time (HH:mm:ss): 0:05:08.974030
+
+Naive Bayes Classifier
+
+                       Class
+Attribute              False    True
+                      (0.84)  (0.16)
+=====================================
+n_ed_visits
+  mean                 0.0086  0.0409
+  std. dev.            0.0189  0.0781
+  weight sum            16944    3175
+  precision            0.0152  0.0152
+
+n_ed_admissions
+  mean                 0.0118  0.0397
+  std. dev.             0.029  0.0659
+  weight sum            16944    3175
+  precision            0.0476  0.0476
+
+diagnosis_category
+  DIG                  1247.0   255.0
+  SYM                  4141.0   873.0
+  CIR                  1916.0   285.0
+  INJ                  2832.0   353.0
+  MUS                  1421.0   259.0
+  BLD                   157.0    46.0
+  RSP                   876.0   168.0
+  MBD                   945.0   296.0
+  END                   334.0    80.0
+  NVS                   897.0   154.0
+  FAC                   166.0    21.0
+  GEN                   840.0   192.0
+  EYE                   155.0    14.0
+  SKN                   488.0   117.0
+  PRG                   274.0    33.0
+  INF                   157.0    30.0
+  EAR                    92.0    11.0
+  NEO                    24.0     4.0
+  MAL                     1.0     3.0
+  PNL                     1.0     1.0
+  [total]             16964.0  3195.0
+
+age
+  46-65                5360.0  1209.0
+  66-85                3839.0   782.0
+  18-25                2205.0   213.0
+  26-45                4558.0   763.0
+  85+                   987.0   213.0
+  [total]             16949.0  3180.0
+
+race
+  WHITE                9768.0  1755.0
+  ASIAN                 811.0    95.0
+  OTHER                1011.0   122.0
+  UNKNOWN               264.0     3.0
+  BLACK                3635.0   906.0
+  HISPANIC/LATINO      1461.0   300.0
+  [total]             16950.0  3181.0
+
+
+
+
+Correctly Classified Instances       68540               84.3185 %
+Incorrectly Classified Instances     12747               15.6815 %
+Kappa statistic                          0.2598
+Mean absolute error                      0.1712
+Root mean squared error                  0.3747
+Relative absolute error                 63.6498 %
+Root relative squared error            101.6058 %
+Total Number of Instances            81287     
+
+AUC: 0.699459894136473 (95% CI: 0.699 - 0.700)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.960    0.757    0.867      0.960    0.911      0.286    0.699     0.908     False
+                 0.243    0.040    0.538      0.243    0.335      0.286    0.699     0.394     True
+Weighted Avg.    0.843    0.641    0.814      0.843    0.818      0.286    0.699     0.825     
+
+[[65336.  2754.]
+ [ 9993.  3204.]]
+
+Class 0 details
+Area under ROC: 0.6994166314362269
+False negatives: 2754.0
+True negatives: 3204.0
+False positives: 9993.0
+True positives: 65336.0
+
+Class 1 details
+Area under ROC: 0.6994260106400991
+False negatives: 9993.0
+True negatives: 65336.0
+False positives: 2754.0
+True positives: 3204.0
+

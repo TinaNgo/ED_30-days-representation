@@ -1,0 +1,124 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:02.149579
+Evaluation time (HH:mm:ss): 0:05:17.136998
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                              Class
+Variable                                      False
+===================================================
+gender=M                                    -0.1234
+separation_mode=admitted                    -0.0542
+separation_mode=discharged                   0.1198
+separation_mode=left without being seen     -0.5882
+separation_mode=expired/other                0.1844
+diagnosis_category=DIG                      -0.0245
+diagnosis_category=SYM                      -0.1086
+diagnosis_category=CIR                       0.2734
+diagnosis_category=INJ                       0.3311
+diagnosis_category=MUS                       0.0321
+diagnosis_category=BLD                      -0.3855
+diagnosis_category=RSP                      -0.0374
+diagnosis_category=MBD                      -0.6316
+diagnosis_category=END                      -0.1741
+diagnosis_category=NVS                       0.0386
+diagnosis_category=FAC                        0.216
+diagnosis_category=GEN                      -0.2102
+diagnosis_category=EYE                       0.7227
+diagnosis_category=SKN                       -0.258
+diagnosis_category=PRG                        0.105
+diagnosis_category=INF                       0.0045
+diagnosis_category=EAR                       0.3848
+diagnosis_category=NEO                       0.4984
+diagnosis_category=MAL                     -18.1973
+diagnosis_category=PNL                            0
+age=46-65                                   -0.2047
+age=66-85                                   -0.1488
+age=18-25                                    0.6332
+age=26-45                                    0.0928
+age=85+                                     -0.2436
+triage_category=three                       -0.0975
+triage_category=two                          0.0438
+triage_category=four                         0.0565
+triage_category=one                          0.1751
+triage_category=five                         0.8472
+Intercept                                    1.7922
+
+
+Odds Ratios...
+                                              Class
+Variable                                      False
+===================================================
+gender=M                                     0.8839
+separation_mode=admitted                     0.9473
+separation_mode=discharged                   1.1273
+separation_mode=left without being seen      0.5553
+separation_mode=expired/other                1.2025
+diagnosis_category=DIG                       0.9758
+diagnosis_category=SYM                       0.8971
+diagnosis_category=CIR                       1.3145
+diagnosis_category=INJ                       1.3925
+diagnosis_category=MUS                       1.0326
+diagnosis_category=BLD                       0.6801
+diagnosis_category=RSP                       0.9633
+diagnosis_category=MBD                       0.5317
+diagnosis_category=END                       0.8402
+diagnosis_category=NVS                       1.0394
+diagnosis_category=FAC                       1.2411
+diagnosis_category=GEN                       0.8104
+diagnosis_category=EYE                         2.06
+diagnosis_category=SKN                       0.7726
+diagnosis_category=PRG                       1.1107
+diagnosis_category=INF                       1.0046
+diagnosis_category=EAR                       1.4693
+diagnosis_category=NEO                       1.6462
+diagnosis_category=MAL                            0
+diagnosis_category=PNL                            1
+age=46-65                                    0.8149
+age=66-85                                    0.8618
+age=18-25                                    1.8837
+age=26-45                                    1.0973
+age=85+                                      0.7838
+triage_category=three                        0.9071
+triage_category=two                          1.0448
+triage_category=four                         1.0581
+triage_category=one                          1.1914
+triage_category=five                          2.333
+
+
+
+Correctly Classified Instances       68080               83.7526 %
+Incorrectly Classified Instances     13207               16.2474 %
+Kappa statistic                          0.0001
+Mean absolute error                      0.2635
+Root mean squared error                  0.3655
+Relative absolute error                 97.9748 %
+Root relative squared error             99.107  %
+Total Number of Instances            81287     
+
+AUC: 0.5957497070804706 (95% CI: 0.596 - 0.596)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.838      1.000    0.912      0.001    0.596     0.877     False
+                 0.000    0.000    0.188      0.000    0.000      0.001    0.596     0.227     True
+Weighted Avg.    0.838    0.837    0.732      0.838    0.764      0.001    0.596     0.772     
+
+[[6.8077e+04 1.3000e+01]
+ [1.3194e+04 3.0000e+00]]
+
+Class 0 details
+Area under ROC: 0.595739408168452
+False negatives: 13.0
+True negatives: 3.0
+False positives: 13194.0
+True positives: 68077.0
+
+Class 1 details
+Area under ROC: 0.595739408168452
+False negatives: 13194.0
+True negatives: 68077.0
+False positives: 13.0
+True positives: 3.0
+

@@ -1,0 +1,1106 @@
+Classifier: weka.classifiers.trees.REPTree
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.656608
+Evaluation time (HH:mm:ss): 0:04:58.952137
+
+
+REPTree
+============
+
+n_ed_visits < 0.01
+|   n_ed_visits < 0
+|   |   diagnosis_category = DIG
+|   |   |   race = WHITE : False (592/240) [288/111]
+|   |   |   race = ASIAN
+|   |   |   |   age = 46-65 : False (4/0) [4/0]
+|   |   |   |   age = 66-85 : False (5/0) [1/0]
+|   |   |   |   age = 18-25 : True (4/1) [5/2]
+|   |   |   |   age = 26-45 : False (15/2) [12/4]
+|   |   |   |   age = 85+ : False (0/0) [1/0]
+|   |   |   race = OTHER : False (25/8) [21/4]
+|   |   |   race = UNKNOWN : False (10/1) [3/0]
+|   |   |   race = BLACK : False (121/40) [64/23]
+|   |   |   race = HISPANIC/LATINO : False (56/16) [22/7]
+|   |   diagnosis_category = SYM
+|   |   |   race = WHITE : False (1686/615) [797/292]
+|   |   |   race = ASIAN
+|   |   |   |   age = 46-65 : False (39/17) [27/8]
+|   |   |   |   age = 66-85 : False (25/9) [12/4]
+|   |   |   |   age = 18-25 : False (21/5) [18/4]
+|   |   |   |   age = 26-45 : False (33/6) [16/0]
+|   |   |   |   age = 85+ : True (18/3) [15/1]
+|   |   |   race = OTHER : False (147/30) [69/12]
+|   |   |   race = UNKNOWN : False (34/0) [16/0]
+|   |   |   race = BLACK
+|   |   |   |   age = 46-65 : False (195/84) [97/38]
+|   |   |   |   age = 66-85 : True (124/61) [43/19]
+|   |   |   |   age = 18-25 : False (62/28) [33/19]
+|   |   |   |   age = 26-45 : False (158/74) [89/46]
+|   |   |   |   age = 85+ : False (10/1) [3/0]
+|   |   |   race = HISPANIC/LATINO
+|   |   |   |   age = 46-65 : False (67/25) [47/23]
+|   |   |   |   age = 66-85 : True (42/21) [24/8]
+|   |   |   |   age = 18-25 : False (13/0) [12/0]
+|   |   |   |   age = 26-45 : True (85/36) [47/23]
+|   |   |   |   age = 85+ : False (3/0) [0/0]
+|   |   diagnosis_category = CIR : False (1196/389) [625/189]
+|   |   diagnosis_category = INJ
+|   |   |   race = WHITE : False (1336/396) [701/223]
+|   |   |   race = ASIAN : False (100/25) [41/8]
+|   |   |   race = OTHER : False (123/29) [55/11]
+|   |   |   race = UNKNOWN : False (54/1) [11/0]
+|   |   |   race = BLACK
+|   |   |   |   age = 46-65 : False (117/38) [46/18]
+|   |   |   |   age = 66-85 : True (53/25) [28/13]
+|   |   |   |   age = 18-25 : False (33/5) [25/1]
+|   |   |   |   age = 26-45 : False (107/37) [40/15]
+|   |   |   |   age = 85+ : False (6/0) [4/0]
+|   |   |   race = HISPANIC/LATINO : False (149/61) [70/22]
+|   |   diagnosis_category = MUS
+|   |   |   race = WHITE
+|   |   |   |   age = 46-65 : False (186/75) [81/28]
+|   |   |   |   age = 66-85 : False (112/37) [65/26]
+|   |   |   |   age = 18-25 : False (31/8) [19/10]
+|   |   |   |   age = 26-45 : False (143/46) [65/25]
+|   |   |   |   age = 85+ : True (28/11) [25/10]
+|   |   |   race = ASIAN
+|   |   |   |   age = 46-65 : False (9/1) [3/1]
+|   |   |   |   age = 66-85 : True (9/2) [2/0]
+|   |   |   |   age = 18-25 : True (10/4) [3/2]
+|   |   |   |   age = 26-45 : False (13/3) [5/1]
+|   |   |   |   age = 85+ : False (0/0) [1/0]
+|   |   |   race = OTHER : False (52/8) [27/3]
+|   |   |   race = UNKNOWN : False (7/0) [8/0]
+|   |   |   race = BLACK : False (231/74) [116/31]
+|   |   |   race = HISPANIC/LATINO : False (78/11) [35/6]
+|   |   diagnosis_category = BLD
+|   |   |   age = 46-65 : False (29/12) [19/7]
+|   |   |   age = 66-85
+|   |   |   |   race = WHITE : False (28/12) [11/5]
+|   |   |   |   race = ASIAN : True (1/0) [2/0]
+|   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   race = UNKNOWN : False (0/0) [1/0]
+|   |   |   |   race = BLACK : False (3/0) [0/0]
+|   |   |   |   race = HISPANIC/LATINO : False (0/0) [0/0]
+|   |   |   age = 18-25 : True (8/3) [6/3]
+|   |   |   age = 26-45 : False (12/0) [5/1]
+|   |   |   age = 85+ : False (5/0) [1/0]
+|   |   diagnosis_category = RSP : False (511/151) [219/55]
+|   |   diagnosis_category = MBD
+|   |   |   race = WHITE
+|   |   |   |   age = 46-65 : True (99/43) [54/22]
+|   |   |   |   age = 66-85 : False (11/2) [2/0]
+|   |   |   |   age = 18-25 : False (138/41) [63/19]
+|   |   |   |   age = 26-45 : False (97/24) [50/9]
+|   |   |   |   age = 85+ : False (1/0) [1/0]
+|   |   |   race = ASIAN : False (33/3) [12/1]
+|   |   |   race = OTHER : False (32/3) [27/2]
+|   |   |   race = UNKNOWN : False (15/0) [13/0]
+|   |   |   race = BLACK : False (91/14) [40/7]
+|   |   |   race = HISPANIC/LATINO : False (47/15) [16/4]
+|   |   diagnosis_category = END : False (155/34) [79/20]
+|   |   diagnosis_category = NVS
+|   |   |   age = 46-65 : False (151/38) [68/18]
+|   |   |   age = 66-85 : False (102/38) [38/14]
+|   |   |   age = 18-25 : False (89/36) [38/11]
+|   |   |   age = 26-45
+|   |   |   |   race = WHITE : False (82/12) [36/9]
+|   |   |   |   race = ASIAN : False (1/0) [1/0]
+|   |   |   |   race = OTHER : True (13/6) [7/3]
+|   |   |   |   race = UNKNOWN : False (1/0) [1/0]
+|   |   |   |   race = BLACK : False (34/7) [20/4]
+|   |   |   |   race = HISPANIC/LATINO : False (17/1) [9/0]
+|   |   |   age = 85+ : False (18/8) [9/3]
+|   |   diagnosis_category = FAC : False (59/4) [38/5]
+|   |   diagnosis_category = GEN : False (543/209) [283/109]
+|   |   diagnosis_category = EYE
+|   |   |   age = 46-65 : False (30/7) [11/4]
+|   |   |   age = 66-85
+|   |   |   |   race = WHITE : False (11/0) [4/0]
+|   |   |   |   race = ASIAN : True (3/1) [2/0]
+|   |   |   |   race = OTHER : False (2/0) [0/0]
+|   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   race = BLACK : False (5/0) [1/0]
+|   |   |   |   race = HISPANIC/LATINO : False (0/0) [0/0]
+|   |   |   age = 18-25 : False (13/1) [9/0]
+|   |   |   age = 26-45 : False (18/0) [11/0]
+|   |   |   age = 85+ : False (3/1) [1/1]
+|   |   diagnosis_category = SKN
+|   |   |   age = 46-65 : False (97/38) [46/12]
+|   |   |   age = 66-85 : False (44/16) [31/11]
+|   |   |   age = 18-25 : False (42/18) [26/2]
+|   |   |   age = 26-45
+|   |   |   |   race = WHITE : False (73/37) [29/13]
+|   |   |   |   race = ASIAN : False (13/7) [5/2]
+|   |   |   |   race = OTHER : False (6/0) [5/1]
+|   |   |   |   race = UNKNOWN : False (1/0) [1/0]
+|   |   |   |   race = BLACK : True (29/14) [17/6]
+|   |   |   |   race = HISPANIC/LATINO : False (11/4) [5/1]
+|   |   |   age = 85+ : False (8/1) [10/1]
+|   |   diagnosis_category = PRG : False (162/29) [78/14]
+|   |   diagnosis_category = INF : False (67/8) [31/4]
+|   |   diagnosis_category = EAR : False (49/1) [24/3]
+|   |   diagnosis_category = NEO : False (6/3) [5/0]
+|   |   diagnosis_category = MAL : False (0/0) [0/0]
+|   |   diagnosis_category = PNL : False (0/0) [0/0]
+|   n_ed_visits >= 0
+|   |   n_ed_visits < 0.01 : True (584/0) [339/0]
+|   |   n_ed_visits >= 0.01
+|   |   |   diagnosis_category = DIG
+|   |   |   |   age = 46-65
+|   |   |   |   |   race = WHITE : False (52/17) [24/9]
+|   |   |   |   |   race = ASIAN : False (2/0) [0/0]
+|   |   |   |   |   race = OTHER
+|   |   |   |   |   |   n_ed_admissions < 0.02 : True (4/0) [1/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.02 : False (2/1) [1/0]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : False (12/3) [6/1]
+|   |   |   |   |   race = HISPANIC/LATINO : False (6/1) [4/0]
+|   |   |   |   age = 66-85
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (9/4) [3/1]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : True (77/26) [29/4]
+|   |   |   |   |   race = ASIAN : True (5/2) [2/0]
+|   |   |   |   |   race = OTHER : False (3/0) [0/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (35/7) [12/1]
+|   |   |   |   |   race = HISPANIC/LATINO : False (8/3) [0/0]
+|   |   |   |   age = 18-25 : False (13/5) [12/6]
+|   |   |   |   age = 26-45
+|   |   |   |   |   n_ed_admissions < 0.01 : False (23/0) [16/2]
+|   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   race = WHITE : True (18/8) [8/3]
+|   |   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   |   race = OTHER : True (0/0) [0/0]
+|   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (3/1) [1/0]
+|   |   |   |   |   |   race = HISPANIC/LATINO : True (0/0) [0/0]
+|   |   |   |   age = 85+ : False (12/2) [8/0]
+|   |   |   diagnosis_category = SYM
+|   |   |   |   age = 46-65
+|   |   |   |   |   race = WHITE : True (213/103) [108/45]
+|   |   |   |   |   race = ASIAN : False (8/3) [3/2]
+|   |   |   |   |   race = OTHER : False (6/0) [4/0]
+|   |   |   |   |   race = UNKNOWN : False (1/0) [0/0]
+|   |   |   |   |   race = BLACK : True (91/40) [52/29]
+|   |   |   |   |   race = HISPANIC/LATINO : False (21/6) [10/2]
+|   |   |   |   age = 66-85
+|   |   |   |   |   race = WHITE : True (176/85) [108/53]
+|   |   |   |   |   race = ASIAN : False (8/1) [5/2]
+|   |   |   |   |   race = OTHER : False (6/0) [2/0]
+|   |   |   |   |   race = UNKNOWN : False (2/0) [0/0]
+|   |   |   |   |   race = BLACK : False (57/21) [34/13]
+|   |   |   |   |   race = HISPANIC/LATINO : False (14/0) [3/0]
+|   |   |   |   age = 18-25 : False (57/14) [22/5]
+|   |   |   |   age = 26-45
+|   |   |   |   |   race = WHITE : True (149/59) [61/23]
+|   |   |   |   |   race = ASIAN : False (8/0) [4/0]
+|   |   |   |   |   race = OTHER : False (19/7) [8/3]
+|   |   |   |   |   race = UNKNOWN : False (1/0) [0/0]
+|   |   |   |   |   race = BLACK : True (98/38) [37/13]
+|   |   |   |   |   race = HISPANIC/LATINO : True (40/15) [26/8]
+|   |   |   |   age = 85+ : False (63/22) [30/13]
+|   |   |   diagnosis_category = CIR : False (317/117) [188/57]
+|   |   |   diagnosis_category = INJ
+|   |   |   |   race = WHITE
+|   |   |   |   |   age = 46-65 : False (68/27) [37/12]
+|   |   |   |   |   age = 66-85 : False (78/34) [37/11]
+|   |   |   |   |   age = 18-25 : False (11/1) [7/0]
+|   |   |   |   |   age = 26-45 : False (42/11) [26/11]
+|   |   |   |   |   age = 85+
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (14/5) [10/6]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : True (18/7) [12/3]
+|   |   |   |   race = ASIAN : False (16/1) [6/0]
+|   |   |   |   race = OTHER : False (13/2) [3/0]
+|   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   race = BLACK
+|   |   |   |   |   age = 46-65 : False (13/1) [10/1]
+|   |   |   |   |   age = 66-85 : False (12/0) [8/0]
+|   |   |   |   |   age = 18-25 : False (8/0) [3/0]
+|   |   |   |   |   age = 26-45
+|   |   |   |   |   |   n_ed_admissions < 0.03
+|   |   |   |   |   |   |   n_ed_admissions < 0 : True (33/18) [20/4]
+|   |   |   |   |   |   |   n_ed_admissions >= 0 : True (3/0) [4/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.03 : False (2/0) [1/1]
+|   |   |   |   |   age = 85+ : False (3/1) [1/1]
+|   |   |   |   race = HISPANIC/LATINO : False (26/4) [16/3]
+|   |   |   diagnosis_category = MUS
+|   |   |   |   age = 46-65
+|   |   |   |   |   race = WHITE : False (36/7) [24/3]
+|   |   |   |   |   race = ASIAN : False (0/0) [1/0]
+|   |   |   |   |   race = OTHER : True (12/5) [2/0]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : False (41/20) [20/6]
+|   |   |   |   |   race = HISPANIC/LATINO
+|   |   |   |   |   |   n_ed_admissions < 0 : False (8/1) [3/1]
+|   |   |   |   |   |   n_ed_admissions >= 0 : True (8/3) [9/0]
+|   |   |   |   age = 66-85
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   n_ed_admissions < 0.01 : True (39/14) [26/6]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : False (6/1) [4/0]
+|   |   |   |   |   race = ASIAN : False (2/0) [0/0]
+|   |   |   |   |   race = OTHER : False (2/1) [1/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK : False (15/6) [3/0]
+|   |   |   |   |   race = HISPANIC/LATINO : True (8/1) [5/2]
+|   |   |   |   age = 18-25 : False (9/0) [8/0]
+|   |   |   |   age = 26-45 : False (62/11) [42/11]
+|   |   |   |   age = 85+ : False (7/1) [3/0]
+|   |   |   diagnosis_category = BLD
+|   |   |   |   race = WHITE
+|   |   |   |   |   age = 46-65 : False (2/0) [2/0]
+|   |   |   |   |   age = 66-85
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (2/0) [1/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : True (7/3) [8/3]
+|   |   |   |   |   age = 18-25 : False (1/1) [1/0]
+|   |   |   |   |   age = 26-45 : True (7/2) [1/1]
+|   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   race = ASIAN : False (0/0) [1/0]
+|   |   |   |   race = OTHER : True (5/1) [4/0]
+|   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   race = BLACK : False (4/0) [2/1]
+|   |   |   |   race = HISPANIC/LATINO : False (3/0) [2/1]
+|   |   |   diagnosis_category = RSP
+|   |   |   |   age = 46-65
+|   |   |   |   |   n_ed_admissions < 0.03
+|   |   |   |   |   |   n_ed_admissions < 0
+|   |   |   |   |   |   |   race = WHITE : True (21/7) [9/3]
+|   |   |   |   |   |   |   race = ASIAN : False (0/0) [1/0]
+|   |   |   |   |   |   |   race = OTHER : False (1/1) [1/0]
+|   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   race = BLACK : False (18/8) [3/1]
+|   |   |   |   |   |   |   race = HISPANIC/LATINO : False (3/1) [4/2]
+|   |   |   |   |   |   n_ed_admissions >= 0 : True (6/0) [2/0]
+|   |   |   |   |   n_ed_admissions >= 0.03 : False (13/2) [12/3]
+|   |   |   |   age = 66-85
+|   |   |   |   |   race = WHITE : True (61/19) [21/8]
+|   |   |   |   |   race = ASIAN : False (4/0) [2/1]
+|   |   |   |   |   race = OTHER : False (3/1) [1/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (24/8) [6/3]
+|   |   |   |   |   race = HISPANIC/LATINO : False (3/0) [1/0]
+|   |   |   |   age = 18-25
+|   |   |   |   |   n_ed_admissions < 0.01 : False (11/0) [4/1]
+|   |   |   |   |   n_ed_admissions >= 0.01 : True (4/1) [4/0]
+|   |   |   |   age = 26-45 : False (31/4) [9/1]
+|   |   |   |   age = 85+ : False (11/1) [4/0]
+|   |   |   diagnosis_category = MBD
+|   |   |   |   age = 46-65 : True (75/37) [36/17]
+|   |   |   |   age = 66-85 : False (11/0) [6/2]
+|   |   |   |   age = 18-25 : False (19/3) [19/3]
+|   |   |   |   age = 26-45
+|   |   |   |   |   race = WHITE : True (80/26) [44/15]
+|   |   |   |   |   race = ASIAN : False (3/0) [0/0]
+|   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   race = UNKNOWN : False (1/0) [0/0]
+|   |   |   |   |   race = BLACK
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (3/1) [1/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   |   n_ed_admissions < 0.03 : True (3/0) [0/0]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.03 : False (2/1) [1/0]
+|   |   |   |   |   race = HISPANIC/LATINO : False (5/0) [2/1]
+|   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   diagnosis_category = END
+|   |   |   |   age = 46-65 : False (33/10) [10/2]
+|   |   |   |   age = 66-85
+|   |   |   |   |   race = WHITE : False (12/1) [4/0]
+|   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   race = OTHER : False (0/0) [1/0]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (9/1) [7/2]
+|   |   |   |   |   race = HISPANIC/LATINO : False (0/0) [1/0]
+|   |   |   |   age = 18-25 : False (4/0) [1/0]
+|   |   |   |   age = 26-45 : False (6/0) [7/0]
+|   |   |   |   age = 85+ : False (1/0) [1/0]
+|   |   |   diagnosis_category = NVS
+|   |   |   |   n_ed_admissions < 0 : False (106/17) [41/7]
+|   |   |   |   n_ed_admissions >= 0
+|   |   |   |   |   n_ed_admissions < 0.03 : True (10/0) [6/0]
+|   |   |   |   |   n_ed_admissions >= 0.03
+|   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   age = 46-65 : False (7/3) [6/0]
+|   |   |   |   |   |   |   age = 66-85 : True (17/7) [8/5]
+|   |   |   |   |   |   |   age = 18-25 : False (2/1) [3/0]
+|   |   |   |   |   |   |   age = 26-45 : True (16/5) [9/2]
+|   |   |   |   |   |   |   age = 85+ : False (5/1) [1/0]
+|   |   |   |   |   |   race = ASIAN : False (0/0) [1/0]
+|   |   |   |   |   |   race = OTHER : False (5/3) [9/4]
+|   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (15/1) [1/0]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (7/1) [4/0]
+|   |   |   diagnosis_category = FAC : False (25/3) [21/2]
+|   |   |   diagnosis_category = GEN
+|   |   |   |   n_ed_admissions < 0
+|   |   |   |   |   age = 46-65 : False (15/7) [15/1]
+|   |   |   |   |   age = 66-85 : False (22/4) [7/0]
+|   |   |   |   |   age = 18-25 : False (14/1) [14/3]
+|   |   |   |   |   age = 26-45
+|   |   |   |   |   |   race = WHITE : False (7/3) [4/1]
+|   |   |   |   |   |   race = ASIAN : False (1/0) [1/0]
+|   |   |   |   |   |   race = OTHER : True (7/3) [1/0]
+|   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (7/0) [4/0]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (6/2) [2/2]
+|   |   |   |   |   age = 85+ : False (4/1) [0/0]
+|   |   |   |   n_ed_admissions >= 0
+|   |   |   |   |   n_ed_admissions < 0.03 : True (13/0) [3/0]
+|   |   |   |   |   n_ed_admissions >= 0.03
+|   |   |   |   |   |   race = WHITE : True (62/23) [29/14]
+|   |   |   |   |   |   race = ASIAN : False (2/1) [0/0]
+|   |   |   |   |   |   race = OTHER : False (3/0) [1/0]
+|   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (12/2) [7/1]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (1/0) [2/0]
+|   |   |   diagnosis_category = EYE : False (24/2) [12/1]
+|   |   |   diagnosis_category = SKN
+|   |   |   |   age = 46-65 : True (69/30) [25/9]
+|   |   |   |   age = 66-85 : False (20/6) [7/3]
+|   |   |   |   age = 18-25 : False (7/1) [7/0]
+|   |   |   |   age = 26-45
+|   |   |   |   |   race = WHITE : False (22/11) [13/6]
+|   |   |   |   |   race = ASIAN : False (0/0) [2/0]
+|   |   |   |   |   race = OTHER : True (6/0) [1/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (14/5) [7/4]
+|   |   |   |   |   race = HISPANIC/LATINO : False (6/1) [0/0]
+|   |   |   |   age = 85+ : False (12/5) [6/4]
+|   |   |   diagnosis_category = PRG : False (43/10) [24/6]
+|   |   |   diagnosis_category = INF
+|   |   |   |   age = 46-65 : False (18/6) [9/1]
+|   |   |   |   age = 66-85 : False (10/4) [4/2]
+|   |   |   |   age = 18-25 : False (1/0) [0/0]
+|   |   |   |   age = 26-45
+|   |   |   |   |   race = WHITE : False (2/0) [0/0]
+|   |   |   |   |   race = ASIAN : False (0/0) [0/0]
+|   |   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (7/3) [1/0]
+|   |   |   |   |   race = HISPANIC/LATINO : False (1/0) [2/0]
+|   |   |   |   age = 85+ : True (7/0) [9/1]
+|   |   |   diagnosis_category = EAR
+|   |   |   |   age = 46-65 : False (1/0) [3/0]
+|   |   |   |   age = 66-85 : False (2/0) [1/1]
+|   |   |   |   age = 18-25 : False (1/0) [1/0]
+|   |   |   |   age = 26-45 : False (6/0) [0/0]
+|   |   |   |   age = 85+ : True (1/0) [1/0]
+|   |   |   diagnosis_category = NEO : False (6/0) [4/0]
+|   |   |   diagnosis_category = MAL : False (0/0) [0/0]
+|   |   |   diagnosis_category = PNL : False (0/0) [0/0]
+n_ed_visits >= 0.01
+|   n_ed_visits < 0.06
+|   |   n_ed_visits < 0.02 : True (708/0) [331/0]
+|   |   n_ed_visits >= 0.02
+|   |   |   n_ed_visits < 0.02
+|   |   |   |   diagnosis_category = DIG
+|   |   |   |   |   age = 46-65 : False (28/7) [14/4]
+|   |   |   |   |   age = 66-85
+|   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   n_ed_admissions < 0.01 : False (2/0) [1/0]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.05 : True (35/10) [7/1]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.05 : False (13/5) [3/1]
+|   |   |   |   |   |   race = ASIAN : True (3/1) [2/0]
+|   |   |   |   |   |   race = OTHER : True (0/0) [0/0]
+|   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (5/0) [4/1]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (2/0) [1/0]
+|   |   |   |   |   age = 18-25 : False (4/1) [2/0]
+|   |   |   |   |   age = 26-45 : False (20/1) [8/2]
+|   |   |   |   |   age = 85+ : False (12/5) [7/0]
+|   |   |   |   diagnosis_category = SYM
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   age = 46-65 : True (107/37) [59/21]
+|   |   |   |   |   |   age = 66-85 : True (90/36) [58/26]
+|   |   |   |   |   |   age = 18-25 : False (10/2) [10/2]
+|   |   |   |   |   |   age = 26-45 : True (88/25) [36/8]
+|   |   |   |   |   |   age = 85+ : True (32/14) [21/7]
+|   |   |   |   |   race = ASIAN
+|   |   |   |   |   |   age = 46-65 : False (2/1) [1/0]
+|   |   |   |   |   |   age = 66-85 : False (4/1) [5/1]
+|   |   |   |   |   |   age = 18-25 : True (4/0) [0/0]
+|   |   |   |   |   |   age = 26-45 : False (4/2) [2/1]
+|   |   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   |   race = OTHER : True (25/11) [14/7]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (56/17) [29/10]
+|   |   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   |   age = 46-65 : True (35/9) [14/7]
+|   |   |   |   |   |   |   age = 66-85
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.05 : True (13/2) [4/1]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.05 : False (9/1) [2/0]
+|   |   |   |   |   |   |   age = 18-25 : False (0/0) [2/1]
+|   |   |   |   |   |   |   age = 26-45 : False (14/6) [1/0]
+|   |   |   |   |   |   |   age = 85+ : False (2/0) [1/0]
+|   |   |   |   |   race = HISPANIC/LATINO
+|   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   n_ed_admissions < 0.03 : True (24/2) [9/5]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.03 : False (5/2) [1/0]
+|   |   |   |   |   |   age = 66-85 : False (8/2) [2/0]
+|   |   |   |   |   |   age = 18-25 : False (1/0) [1/0]
+|   |   |   |   |   |   age = 26-45 : False (8/1) [2/0]
+|   |   |   |   |   |   age = 85+ : False (0/0) [1/0]
+|   |   |   |   diagnosis_category = CIR
+|   |   |   |   |   age = 46-65
+|   |   |   |   |   |   race = WHITE : False (10/2) [9/1]
+|   |   |   |   |   |   race = ASIAN : False (1/0) [1/0]
+|   |   |   |   |   |   race = OTHER : False (2/0) [1/1]
+|   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : True (28/10) [16/5]
+|   |   |   |   |   |   race = HISPANIC/LATINO : True (13/6) [6/2]
+|   |   |   |   |   age = 66-85
+|   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (14/1) [6/1]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.03 : True (22/10) [7/2]
+|   |   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   |   race = OTHER : False (1/0) [1/0]
+|   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (13/1) [4/0]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (8/2) [0/0]
+|   |   |   |   |   age = 18-25 : False (3/0) [1/0]
+|   |   |   |   |   age = 26-45 : False (19/2) [8/2]
+|   |   |   |   |   age = 85+ : False (15/3) [15/2]
+|   |   |   |   diagnosis_category = INJ
+|   |   |   |   |   n_ed_admissions < 0.03 : False (101/24) [54/14]
+|   |   |   |   |   n_ed_admissions >= 0.03 : True (56/23) [30/12]
+|   |   |   |   diagnosis_category = MUS
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   age = 46-65 : False (21/8) [9/5]
+|   |   |   |   |   |   age = 66-85 : False (14/1) [4/0]
+|   |   |   |   |   |   age = 18-25 : True (2/1) [4/1]
+|   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (6/3) [3/1]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.03
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.05 : True (2/0) [1/0]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.05 : False (2/1) [2/0]
+|   |   |   |   |   |   age = 85+ : False (7/1) [1/0]
+|   |   |   |   |   race = ASIAN : False (0/0) [0/0]
+|   |   |   |   |   race = OTHER : True (7/2) [3/1]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (69/32) [26/7]
+|   |   |   |   |   race = HISPANIC/LATINO : False (15/4) [5/0]
+|   |   |   |   diagnosis_category = BLD : False (26/9) [8/2]
+|   |   |   |   diagnosis_category = RSP : False (73/20) [34/8]
+|   |   |   |   diagnosis_category = MBD
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   n_ed_admissions < 0.05
+|   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (18/9) [11/5]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.03 : True (2/0) [0/0]
+|   |   |   |   |   |   |   age = 66-85 : False (1/0) [0/0]
+|   |   |   |   |   |   |   age = 18-25 : True (4/0) [4/0]
+|   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : True (11/4) [11/1]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : False (9/3) [4/2]
+|   |   |   |   |   |   |   age = 85+ : True (0/0) [0/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.05 : False (9/0) [5/1]
+|   |   |   |   |   race = ASIAN : True (4/1) [0/0]
+|   |   |   |   |   race = OTHER : False (4/0) [0/0]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK : False (11/0) [4/0]
+|   |   |   |   |   race = HISPANIC/LATINO : True (13/3) [8/4]
+|   |   |   |   diagnosis_category = END
+|   |   |   |   |   age = 46-65 : True (26/9) [21/4]
+|   |   |   |   |   age = 66-85
+|   |   |   |   |   |   race = WHITE : False (6/3) [2/0]
+|   |   |   |   |   |   race = ASIAN : True (3/0) [1/0]
+|   |   |   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   race = BLACK : False (4/1) [1/0]
+|   |   |   |   |   |   race = HISPANIC/LATINO : False (0/0) [0/0]
+|   |   |   |   |   age = 18-25 : False (1/0) [1/0]
+|   |   |   |   |   age = 26-45 : False (3/0) [2/0]
+|   |   |   |   |   age = 85+ : False (2/0) [0/0]
+|   |   |   |   diagnosis_category = NVS
+|   |   |   |   |   race = WHITE : False (22/4) [19/2]
+|   |   |   |   |   race = ASIAN : False (3/2) [1/0]
+|   |   |   |   |   race = OTHER : True (8/0) [4/2]
+|   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   race = BLACK
+|   |   |   |   |   |   age = 46-65 : False (8/1) [5/2]
+|   |   |   |   |   |   age = 66-85 : True (11/1) [5/1]
+|   |   |   |   |   |   age = 18-25 : False (2/0) [1/0]
+|   |   |   |   |   |   age = 26-45 : False (8/4) [0/0]
+|   |   |   |   |   |   age = 85+ : True (0/0) [0/0]
+|   |   |   |   |   race = HISPANIC/LATINO
+|   |   |   |   |   |   age = 46-65 : False (4/1) [4/2]
+|   |   |   |   |   |   age = 66-85 : True (5/2) [1/0]
+|   |   |   |   |   |   age = 18-25 : False (2/0) [0/0]
+|   |   |   |   |   |   age = 26-45 : False (2/1) [0/0]
+|   |   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   diagnosis_category = FAC : False (19/6) [6/3]
+|   |   |   |   diagnosis_category = GEN
+|   |   |   |   |   race = WHITE : True (35/14) [20/7]
+|   |   |   |   |   race = ASIAN : False (4/0) [1/0]
+|   |   |   |   |   race = OTHER
+|   |   |   |   |   |   age = 46-65 : False (2/0) [0/0]
+|   |   |   |   |   |   age = 66-85 : False (1/0) [2/0]
+|   |   |   |   |   |   age = 18-25 : True (1/0) [4/1]
+|   |   |   |   |   |   age = 26-45 : False (2/0) [1/1]
+|   |   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK
+|   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   n_ed_admissions < 0.05
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (12/6) [6/2]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.03 : True (5/0) [0/0]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.05 : False (5/2) [3/1]
+|   |   |   |   |   |   age = 66-85 : False (4/0) [2/0]
+|   |   |   |   |   |   age = 18-25 : False (1/0) [0/0]
+|   |   |   |   |   |   age = 26-45 : True (15/3) [4/1]
+|   |   |   |   |   |   age = 85+ : False (2/0) [2/0]
+|   |   |   |   |   race = HISPANIC/LATINO
+|   |   |   |   |   |   n_ed_admissions < 0.01 : False (2/0) [3/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : True (2/0) [3/1]
+|   |   |   |   diagnosis_category = EYE : False (5/0) [4/0]
+|   |   |   |   diagnosis_category = SKN
+|   |   |   |   |   age = 46-65 : True (25/10) [7/1]
+|   |   |   |   |   age = 66-85 : True (30/4) [4/1]
+|   |   |   |   |   age = 18-25 : True (4/1) [6/3]
+|   |   |   |   |   age = 26-45 : False (10/2) [3/1]
+|   |   |   |   |   age = 85+ : False (1/0) [0/0]
+|   |   |   |   diagnosis_category = PRG : False (12/4) [8/1]
+|   |   |   |   diagnosis_category = INF
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   n_ed_admissions < 0.04 : True (3/1) [2/0]
+|   |   |   |   |   |   n_ed_admissions >= 0.04 : False (5/0) [1/0]
+|   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   race = OTHER : False (0/0) [1/0]
+|   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   race = BLACK : True (3/1) [6/2]
+|   |   |   |   |   race = HISPANIC/LATINO : True (3/0) [0/0]
+|   |   |   |   diagnosis_category = EAR : False (2/0) [0/0]
+|   |   |   |   diagnosis_category = NEO : False (2/0) [0/0]
+|   |   |   |   diagnosis_category = MAL : False (0/0) [0/0]
+|   |   |   |   diagnosis_category = PNL : False (0/0) [0/0]
+|   |   |   n_ed_visits >= 0.02
+|   |   |   |   n_ed_visits < 0.03 : True (492/0) [229/0]
+|   |   |   |   n_ed_visits >= 0.03
+|   |   |   |   |   n_ed_visits < 0.03
+|   |   |   |   |   |   diagnosis_category = DIG
+|   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : False (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : True (5/1) [5/1]
+|   |   |   |   |   |   |   |   age = 66-85 : False (3/0) [2/0]
+|   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   age = 26-45 : False (4/1) [0/0]
+|   |   |   |   |   |   |   |   age = 85+ : False (5/1) [2/0]
+|   |   |   |   |   |   |   race = ASIAN : True (1/1) [5/0]
+|   |   |   |   |   |   |   race = OTHER : False (5/1) [2/1]
+|   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : False (4/1) [1/0]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : True (10/2) [6/3]
+|   |   |   |   |   |   |   race = HISPANIC/LATINO
+|   |   |   |   |   |   |   |   age = 46-65 : False (4/0) [0/0]
+|   |   |   |   |   |   |   |   age = 66-85 : True (2/0) [3/1]
+|   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   age = 26-45 : False (2/0) [2/1]
+|   |   |   |   |   |   |   |   age = 85+ : False (0/0) [1/0]
+|   |   |   |   |   |   diagnosis_category = SYM
+|   |   |   |   |   |   |   n_ed_admissions < 0.03
+|   |   |   |   |   |   |   |   race = WHITE : False (46/16) [18/6]
+|   |   |   |   |   |   |   |   race = ASIAN : True (1/1) [3/0]
+|   |   |   |   |   |   |   |   race = OTHER : False (3/1) [0/0]
+|   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   |   age = 46-65 : False (10/1) [6/0]
+|   |   |   |   |   |   |   |   |   age = 66-85 : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   age = 18-25 : False (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : True (12/5) [5/2]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (26/10) [16/5]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.03
+|   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   race = WHITE : True (47/15) [18/6]
+|   |   |   |   |   |   |   |   |   race = ASIAN : False (2/1) [0/0]
+|   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = BLACK : False (4/0) [5/1]
+|   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (3/0) [0/0]
+|   |   |   |   |   |   |   |   age = 66-85
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.08 : True (46/7) [14/2]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.08
+|   |   |   |   |   |   |   |   |   |   race = WHITE : False (8/1) [3/0]
+|   |   |   |   |   |   |   |   |   |   race = ASIAN : True (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = BLACK : False (2/1) [3/0]
+|   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (1/0) [1/0]
+|   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   age = 26-45 : False (8/2) [9/1]
+|   |   |   |   |   |   |   |   age = 85+ : True (13/6) [12/4]
+|   |   |   |   |   |   diagnosis_category = CIR
+|   |   |   |   |   |   |   n_ed_admissions < 0.06 : False (53/11) [23/4]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.06
+|   |   |   |   |   |   |   |   age = 46-65 : True (10/2) [6/2]
+|   |   |   |   |   |   |   |   age = 66-85 : False (3/1) [3/0]
+|   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   age = 26-45 : False (2/0) [0/0]
+|   |   |   |   |   |   |   |   age = 85+ : False (10/4) [3/1]
+|   |   |   |   |   |   diagnosis_category = INJ
+|   |   |   |   |   |   |   age = 46-65 : False (12/1) [6/3]
+|   |   |   |   |   |   |   age = 66-85
+|   |   |   |   |   |   |   |   race = WHITE : False (7/2) [8/1]
+|   |   |   |   |   |   |   |   race = ASIAN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   race = OTHER : True (3/0) [1/0]
+|   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   race = BLACK : True (1/0) [0/0]
+|   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (2/0) [2/0]
+|   |   |   |   |   |   |   age = 18-25 : False (5/1) [1/0]
+|   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : True (13/1) [4/2]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : False (13/4) [2/0]
+|   |   |   |   |   |   |   age = 85+
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.07 : True (8/3) [5/2]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : False (2/0) [0/0]
+|   |   |   |   |   |   diagnosis_category = MUS
+|   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : False (13/2) [3/1]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.04
+|   |   |   |   |   |   |   |   |   race = WHITE : True (7/1) [3/0]
+|   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = BLACK : True (10/1) [5/0]
+|   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (1/0) [1/0]
+|   |   |   |   |   |   |   age = 66-85 : False (12/3) [7/3]
+|   |   |   |   |   |   |   age = 18-25 : False (2/1) [1/0]
+|   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   race = WHITE : False (3/1) [3/0]
+|   |   |   |   |   |   |   |   race = ASIAN : True (1/0) [0/0]
+|   |   |   |   |   |   |   |   race = OTHER : True (2/0) [0/0]
+|   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   race = BLACK : False (4/1) [5/0]
+|   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (4/0) [3/1]
+|   |   |   |   |   |   |   age = 85+ : False (7/1) [0/0]
+|   |   |   |   |   |   diagnosis_category = BLD : True (15/7) [8/3]
+|   |   |   |   |   |   diagnosis_category = RSP
+|   |   |   |   |   |   |   race = WHITE : False (17/1) [11/3]
+|   |   |   |   |   |   |   race = ASIAN : False (1/0) [1/0]
+|   |   |   |   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.04
+|   |   |   |   |   |   |   |   |   age = 46-65 : True (4/0) [3/1]
+|   |   |   |   |   |   |   |   |   age = 66-85 : False (3/1) [2/0]
+|   |   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : False (4/1) [0/0]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : False (5/0) [4/1]
+|   |   |   |   |   |   |   race = HISPANIC/LATINO : True (16/7) [8/3]
+|   |   |   |   |   |   diagnosis_category = MBD
+|   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : True (27/2) [14/5]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : False (12/5) [5/2]
+|   |   |   |   |   |   |   race = ASIAN : False (2/0) [1/1]
+|   |   |   |   |   |   |   race = OTHER : False (3/0) [0/0]
+|   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   race = BLACK : False (5/1) [5/2]
+|   |   |   |   |   |   |   race = HISPANIC/LATINO : False (2/0) [1/0]
+|   |   |   |   |   |   diagnosis_category = END
+|   |   |   |   |   |   |   age = 46-65 : False (10/5) [5/1]
+|   |   |   |   |   |   |   age = 66-85 : True (5/2) [2/1]
+|   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   age = 26-45 : False (4/0) [1/0]
+|   |   |   |   |   |   |   age = 85+ : True (3/0) [1/0]
+|   |   |   |   |   |   diagnosis_category = NVS
+|   |   |   |   |   |   |   race = WHITE : False (12/1) [10/1]
+|   |   |   |   |   |   |   race = ASIAN : False (2/1) [1/0]
+|   |   |   |   |   |   |   race = OTHER : False (2/0) [0/0]
+|   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   age = 46-65 : False (7/3) [2/1]
+|   |   |   |   |   |   |   |   age = 66-85 : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   age = 18-25 : True (4/1) [1/0]
+|   |   |   |   |   |   |   |   age = 26-45 : False (4/1) [1/0]
+|   |   |   |   |   |   |   |   age = 85+ : False (0/0) [0/0]
+|   |   |   |   |   |   |   race = HISPANIC/LATINO : False (4/1) [1/0]
+|   |   |   |   |   |   diagnosis_category = FAC : False (11/4) [5/1]
+|   |   |   |   |   |   diagnosis_category = GEN
+|   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   n_ed_admissions < 0.07 : False (12/0) [4/2]
+|   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : True (3/1) [1/0]
+|   |   |   |   |   |   |   age = 66-85 : True (20/6) [12/2]
+|   |   |   |   |   |   |   age = 18-25 : False (3/0) [0/0]
+|   |   |   |   |   |   |   age = 26-45 : False (8/2) [4/0]
+|   |   |   |   |   |   |   age = 85+ : True (10/3) [4/0]
+|   |   |   |   |   |   diagnosis_category = EYE
+|   |   |   |   |   |   |   n_ed_admissions < 0.04 : False (2/0) [2/0]
+|   |   |   |   |   |   |   n_ed_admissions >= 0.04 : True (4/0) [3/1]
+|   |   |   |   |   |   diagnosis_category = SKN : False (13/5) [3/0]
+|   |   |   |   |   |   diagnosis_category = PRG : False (7/1) [1/1]
+|   |   |   |   |   |   diagnosis_category = INF : False (13/7) [6/2]
+|   |   |   |   |   |   diagnosis_category = EAR : True (1/0) [2/1]
+|   |   |   |   |   |   diagnosis_category = NEO : False (1/0) [0/0]
+|   |   |   |   |   |   diagnosis_category = MAL : False (0/0) [0/0]
+|   |   |   |   |   |   diagnosis_category = PNL : False (0/0) [0/0]
+|   |   |   |   |   n_ed_visits >= 0.03
+|   |   |   |   |   |   n_ed_visits < 0.04 : True (317/0) [165/0]
+|   |   |   |   |   |   n_ed_visits >= 0.04
+|   |   |   |   |   |   |   n_ed_visits < 0.04
+|   |   |   |   |   |   |   |   diagnosis_category = DIG
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.07 : False (15/2) [7/3]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : True (31/7) [18/5]
+|   |   |   |   |   |   |   |   diagnosis_category = SYM
+|   |   |   |   |   |   |   |   |   n_ed_admissions < 0.05
+|   |   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : False (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : True (16/4) [8/1]
+|   |   |   |   |   |   |   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = OTHER : True (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.03 : True (7/1) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (3/0) [4/0]
+|   |   |   |   |   |   |   |   |   |   age = 66-85
+|   |   |   |   |   |   |   |   |   |   |   race = WHITE : False (7/1) [6/2]
+|   |   |   |   |   |   |   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = OTHER : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = BLACK : True (7/3) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   age = 18-25 : True (5/1) [4/2]
+|   |   |   |   |   |   |   |   |   |   age = 26-45 : False (9/0) [8/3]
+|   |   |   |   |   |   |   |   |   |   age = 85+ : False (6/2) [0/0]
+|   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.05
+|   |   |   |   |   |   |   |   |   |   age = 46-65 : True (43/4) [18/5]
+|   |   |   |   |   |   |   |   |   |   age = 66-85 : True (25/7) [16/4]
+|   |   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.1 : True (9/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.1 : False (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   age = 85+
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.1 : True (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.1 : False (4/0) [1/0]
+|   |   |   |   |   |   |   |   diagnosis_category = CIR : False (31/12) [15/8]
+|   |   |   |   |   |   |   |   diagnosis_category = INJ
+|   |   |   |   |   |   |   |   |   age = 46-65 : False (11/3) [10/4]
+|   |   |   |   |   |   |   |   |   age = 66-85
+|   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.07 : True (7/2) [4/0]
+|   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   age = 18-25 : True (4/0) [0/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : True (6/1) [4/0]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = MUS
+|   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   race = WHITE : True (8/1) [7/0]
+|   |   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = OTHER : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = BLACK : False (5/2) [2/0]
+|   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   age = 66-85 : True (5/1) [5/3]
+|   |   |   |   |   |   |   |   |   age = 18-25 : False (1/0) [2/1]
+|   |   |   |   |   |   |   |   |   age = 26-45 : False (7/3) [2/1]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (2/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = BLD : True (4/2) [1/0]
+|   |   |   |   |   |   |   |   diagnosis_category = RSP
+|   |   |   |   |   |   |   |   |   age = 46-65 : True (14/3) [10/3]
+|   |   |   |   |   |   |   |   |   age = 66-85 : False (8/2) [2/0]
+|   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : False (2/0) [4/1]
+|   |   |   |   |   |   |   |   |   age = 85+ : True (7/3) [5/0]
+|   |   |   |   |   |   |   |   diagnosis_category = MBD
+|   |   |   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.03 : False (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.03 : True (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   age = 66-85 : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   age = 18-25 : True (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : False (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : True (3/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = BLACK : True (18/3) [6/3]
+|   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (4/0) [1/0]
+|   |   |   |   |   |   |   |   diagnosis_category = END
+|   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.07 : True (3/0) [3/0]
+|   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.07 : False (3/0) [3/2]
+|   |   |   |   |   |   |   |   |   age = 66-85 : False (2/0) [2/1]
+|   |   |   |   |   |   |   |   |   age = 18-25 : False (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : True (3/1) [2/1]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = NVS
+|   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   race = WHITE : True (19/1) [6/2]
+|   |   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = OTHER : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   race = BLACK : False (5/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   age = 66-85 : False (6/2) [2/1]
+|   |   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   age = 26-45 : False (9/3) [4/1]
+|   |   |   |   |   |   |   |   |   age = 85+ : False (3/0) [1/1]
+|   |   |   |   |   |   |   |   diagnosis_category = FAC : False (3/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = GEN
+|   |   |   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   |   |   age = 46-65 : True (5/2) [2/0]
+|   |   |   |   |   |   |   |   |   |   age = 66-85 : False (5/1) [1/1]
+|   |   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   age = 26-45 : False (1/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [2/1]
+|   |   |   |   |   |   |   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = OTHER : False (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   race = BLACK : False (7/1) [3/2]
+|   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (3/1) [3/0]
+|   |   |   |   |   |   |   |   diagnosis_category = EYE : True (3/0) [2/0]
+|   |   |   |   |   |   |   |   diagnosis_category = SKN : False (7/1) [3/1]
+|   |   |   |   |   |   |   |   diagnosis_category = PRG : True (2/1) [3/1]
+|   |   |   |   |   |   |   |   diagnosis_category = INF : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   diagnosis_category = EAR : True (6/2) [1/1]
+|   |   |   |   |   |   |   |   diagnosis_category = NEO : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = MAL : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   diagnosis_category = PNL : True (0/0) [0/0]
+|   |   |   |   |   |   |   n_ed_visits >= 0.04
+|   |   |   |   |   |   |   |   n_ed_visits < 0.04 : True (259/0) [158/0]
+|   |   |   |   |   |   |   |   n_ed_visits >= 0.04
+|   |   |   |   |   |   |   |   |   n_ed_visits < 0.04
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = DIG
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.12 : False (21/7) [2/2]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.12
+|   |   |   |   |   |   |   |   |   |   |   |   age = 46-65 : True (8/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : False (1/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 26-45 : True (2/0) [6/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = SYM
+|   |   |   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.12
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : True (18/5) [10/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : False (6/1) [10/3]
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.12 : True (10/0) [11/4]
+|   |   |   |   |   |   |   |   |   |   |   age = 66-85 : False (24/12) [12/2]
+|   |   |   |   |   |   |   |   |   |   |   age = 18-25 : False (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : True (3/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : False (9/3) [8/0]
+|   |   |   |   |   |   |   |   |   |   |   age = 85+ : False (5/1) [2/2]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = CIR
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.12
+|   |   |   |   |   |   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   |   |   |   |   |   age = 46-65 : True (5/2) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : False (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   age = 26-45 : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = ASIAN : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.04 : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.04 : True (6/0) [7/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (1/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.12 : False (3/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = INJ : False (16/3) [10/3]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = MUS
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.05 : False (15/4) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.05 : True (8/1) [11/2]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = BLD : False (1/0) [4/1]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = RSP : False (19/5) [3/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = MBD : True (27/9) [7/3]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = END : True (5/3) [4/1]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = NVS
+|   |   |   |   |   |   |   |   |   |   |   race = WHITE : False (5/1) [5/0]
+|   |   |   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   race = BLACK : True (6/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (2/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = FAC : False (4/2) [1/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = GEN : True (22/10) [8/4]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = EYE : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = SKN : False (5/3) [2/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = PRG : True (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = INF : False (3/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = EAR : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = NEO : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = MAL : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   diagnosis_category = PNL : False (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   n_ed_visits >= 0.04
+|   |   |   |   |   |   |   |   |   |   n_ed_visits < 0.05 : True (180/0) [100/0]
+|   |   |   |   |   |   |   |   |   |   n_ed_visits >= 0.05
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = DIG
+|   |   |   |   |   |   |   |   |   |   |   |   age = 46-65 : True (11/4) [6/2]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : True (19/5) [10/1]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 26-45 : False (5/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : True (8/1) [5/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = SYM : True (122/36) [61/10]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = CIR
+|   |   |   |   |   |   |   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_visits < 0.06 : True (15/1) [16/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_visits >= 0.06 : False (9/3) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : False (11/2) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 26-45 : False (4/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : False (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = INJ
+|   |   |   |   |   |   |   |   |   |   |   |   race = WHITE
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.09 : False (11/2) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.09 : True (12/3) [11/2]
+|   |   |   |   |   |   |   |   |   |   |   |   race = ASIAN : True (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = OTHER : True (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = BLACK : True (16/3) [7/0]
+|   |   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : False (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = MUS : True (39/13) [10/3]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = BLD : True (7/0) [8/2]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = RSP
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_visits < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = WHITE : True (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = ASIAN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = OTHER : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = BLACK : False (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   race = HISPANIC/LATINO : True (3/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   n_ed_visits >= 0.05 : True (29/1) [10/1]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = MBD
+|   |   |   |   |   |   |   |   |   |   |   |   age = 46-65 : True (29/5) [13/1]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : True (1/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : False (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 26-45
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions < 0.01 : False (5/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   n_ed_admissions >= 0.01 : True (22/5) [12/4]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = END : True (24/3) [8/2]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = NVS
+|   |   |   |   |   |   |   |   |   |   |   |   age = 46-65 : True (25/3) [7/1]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 66-85 : True (4/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 26-45 : False (10/4) [3/0]
+|   |   |   |   |   |   |   |   |   |   |   |   age = 85+ : False (1/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = FAC : True (4/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = GEN : True (26/9) [15/3]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = EYE : False (1/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = SKN : True (15/2) [9/3]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = PRG : True (2/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = INF : False (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = EAR : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = NEO : False (0/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = MAL : True (0/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   diagnosis_category = PNL : True (0/0) [0/0]
+|   n_ed_visits >= 0.06
+|   |   diagnosis_category = DIG
+|   |   |   n_ed_visits < 0.08
+|   |   |   |   n_ed_visits < 0.08
+|   |   |   |   |   age = 46-65 : True (9/0) [8/1]
+|   |   |   |   |   age = 66-85 : False (2/1) [2/1]
+|   |   |   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   |   |   age = 26-45
+|   |   |   |   |   |   n_ed_visits < 0.07 : False (2/0) [1/0]
+|   |   |   |   |   |   n_ed_visits >= 0.07 : True (3/0) [2/0]
+|   |   |   |   |   age = 85+ : True (3/0) [0/0]
+|   |   |   |   n_ed_visits >= 0.08 : False (3/0) [4/1]
+|   |   |   n_ed_visits >= 0.08 : True (64/4) [26/4]
+|   |   diagnosis_category = SYM : True (670/44) [336/20]
+|   |   diagnosis_category = CIR
+|   |   |   race = WHITE
+|   |   |   |   age = 46-65 : True (64/5) [28/1]
+|   |   |   |   age = 66-85
+|   |   |   |   |   n_ed_visits < 0.08 : False (4/0) [0/0]
+|   |   |   |   |   n_ed_visits >= 0.08 : True (10/3) [2/0]
+|   |   |   |   age = 18-25 : False (0/0) [1/0]
+|   |   |   |   age = 26-45
+|   |   |   |   |   n_ed_admissions < 0.01 : False (2/0) [1/0]
+|   |   |   |   |   n_ed_admissions >= 0.01
+|   |   |   |   |   |   n_ed_visits < 0.08 : False (2/1) [1/0]
+|   |   |   |   |   |   n_ed_visits >= 0.08 : True (7/0) [4/1]
+|   |   |   |   age = 85+ : True (1/0) [3/0]
+|   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   race = OTHER : False (3/1) [0/0]
+|   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   race = BLACK : True (96/7) [47/2]
+|   |   |   race = HISPANIC/LATINO : False (6/1) [1/1]
+|   |   diagnosis_category = INJ : True (118/14) [55/7]
+|   |   diagnosis_category = MUS : True (127/15) [42/11]
+|   |   diagnosis_category = BLD : True (11/4) [7/0]
+|   |   diagnosis_category = RSP
+|   |   |   age = 46-65
+|   |   |   |   n_ed_admissions < 0.06
+|   |   |   |   |   n_ed_visits < 0.1
+|   |   |   |   |   |   n_ed_admissions < 0.01 : True (2/0) [3/1]
+|   |   |   |   |   |   n_ed_admissions >= 0.01 : False (3/0) [1/0]
+|   |   |   |   |   n_ed_visits >= 0.1 : True (10/0) [2/0]
+|   |   |   |   n_ed_admissions >= 0.06 : True (39/0) [12/1]
+|   |   |   age = 66-85 : True (36/0) [12/0]
+|   |   |   age = 18-25 : True (0/0) [0/0]
+|   |   |   age = 26-45 : True (17/2) [10/1]
+|   |   |   age = 85+ : False (4/2) [0/0]
+|   |   diagnosis_category = MBD : True (506/19) [284/6]
+|   |   diagnosis_category = END
+|   |   |   race = WHITE
+|   |   |   |   n_ed_admissions < 0.12 : True (13/0) [7/2]
+|   |   |   |   n_ed_admissions >= 0.12
+|   |   |   |   |   n_ed_visits < 0.07 : True (3/0) [0/0]
+|   |   |   |   |   n_ed_visits >= 0.07 : False (4/1) [1/0]
+|   |   |   race = ASIAN : False (1/0) [0/0]
+|   |   |   race = OTHER : True (0/0) [0/0]
+|   |   |   race = UNKNOWN : True (0/0) [0/0]
+|   |   |   race = BLACK : True (31/5) [14/0]
+|   |   |   race = HISPANIC/LATINO : True (0/0) [0/0]
+|   |   diagnosis_category = NVS
+|   |   |   n_ed_visits < 0.12
+|   |   |   |   age = 46-65 : True (8/2) [2/1]
+|   |   |   |   age = 66-85 : True (7/0) [1/0]
+|   |   |   |   age = 18-25 : False (1/0) [0/0]
+|   |   |   |   age = 26-45 : False (4/1) [7/3]
+|   |   |   |   age = 85+ : True (0/0) [0/0]
+|   |   |   n_ed_visits >= 0.12 : True (60/2) [23/2]
+|   |   diagnosis_category = FAC : False (3/1) [1/0]
+|   |   diagnosis_category = GEN : True (39/5) [21/4]
+|   |   diagnosis_category = EYE : True (1/0) [0/0]
+|   |   diagnosis_category = SKN : True (29/4) [19/2]
+|   |   diagnosis_category = PRG : True (2/0) [1/0]
+|   |   diagnosis_category = INF : True (1/0) [2/1]
+|   |   diagnosis_category = EAR : True (0/0) [0/0]
+|   |   diagnosis_category = NEO : False (0/0) [1/0]
+|   |   diagnosis_category = MAL : True (2/0) [0/0]
+|   |   diagnosis_category = PNL : True (0/0) [0/0]
+
+Size of the tree : 1060
+
+
+Correctly Classified Instances       62779               77.2313 %
+Incorrectly Classified Instances     18508               22.7687 %
+Kappa statistic                          0.2046
+Mean absolute error                      0.373 
+Root mean squared error                  0.4285
+Relative absolute error                 74.6094 %
+Root relative squared error             85.693  %
+Total Number of Instances            81287     
+
+AUC: 0.6097463461121175 (95% CI: 0.610 - 0.610)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.851    0.636    0.874      0.851    0.862      0.205    0.610     0.864     False
+                 0.364    0.149    0.322      0.364    0.342      0.205    0.610     0.315     True
+Weighted Avg.    0.772    0.557    0.784      0.772    0.778      0.205    0.610     0.775     
+
+[[57977. 10113.]
+ [ 8395.  4802.]]
+
+Class 0 details
+Area under ROC: 0.6097305011298169
+False negatives: 10113.0
+True negatives: 4802.0
+False positives: 8395.0
+True positives: 57977.0
+
+Class 1 details
+Area under ROC: 0.6097305011298169
+False negatives: 8395.0
+True negatives: 57977.0
+False positives: 10113.0
+True positives: 4802.0
+

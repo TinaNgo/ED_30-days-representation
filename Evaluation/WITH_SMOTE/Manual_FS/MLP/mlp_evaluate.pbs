@@ -3,9 +3,9 @@
 #PBS -P RDS-FEI-MIMIC_dataset-RW
 #PBS -M tngo9001@uni.sydney.edu.au
 #PBS -m abe
-#PBS -N SVM_evaluate
+#PBS -N MLP_evaluate_smote_Manual_FS
 #PBS -q defaultQ
-#PBS -l select=1:ncpus=1:mem=30GB
+#PBS -l select=1:ncpus=1:mem=35GB
 #PBS -l walltime=2:00:00
 
 module load python/3.9.15
@@ -15,4 +15,4 @@ module load weka
 
 
 cd $PBS_O_WORKDIR
-python /project/RDS-FEI-MIMIC_dataset-RW/weka_evaluate.py Evaluation/WITHOUT_SMOTE/NO_FS/SVM/
+python /project/RDS-FEI-MIMIC_dataset-RW/weka_evaluate.py Evaluation/WITH_SMOTE/Manual_FS/MLP/

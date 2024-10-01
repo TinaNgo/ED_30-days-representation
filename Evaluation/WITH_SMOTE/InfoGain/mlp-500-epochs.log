@@ -1,0 +1,92 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 500
+Classifier build time (HH:mm:ss): 0:00:18.211112
+Evaluation time (HH:mm:ss): 0:05:25.568975
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.038550443469823885
+    Node 2    -1.9057575249349203
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.03855044346982383
+    Node 2    1.9057575249349206
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    9.46064925623136
+    Attrib n_ed_visits    153.6095334525749
+    Attrib n_ed_admissions    75.04993836421384
+    Attrib diagnosis_category=DIG    -4.896431477555183
+    Attrib diagnosis_category=SYM    -4.620427767464276
+    Attrib diagnosis_category=CIR    -10.491498970737224
+    Attrib diagnosis_category=INJ    -5.538843633879577
+    Attrib diagnosis_category=MUS    -4.474599608094157
+    Attrib diagnosis_category=BLD    -6.397057181749117
+    Attrib diagnosis_category=RSP    -14.073614983120882
+    Attrib diagnosis_category=MBD    -3.43004675270885
+    Attrib diagnosis_category=END    -4.820022831585058
+    Attrib diagnosis_category=NVS    -4.881130159084251
+    Attrib diagnosis_category=FAC    -21.571040532373683
+    Attrib diagnosis_category=GEN    -3.209202503528141
+    Attrib diagnosis_category=EYE    -8.045300332937426
+    Attrib diagnosis_category=SKN    -3.116922624654292
+    Attrib diagnosis_category=PRG    -6.097361719864984
+    Attrib diagnosis_category=INF    -4.623487558745164
+    Attrib diagnosis_category=EAR    -20.928322300840676
+    Attrib diagnosis_category=NEO    -20.710286259850033
+    Attrib diagnosis_category=MAL    -9.416773852841136
+    Attrib diagnosis_category=PNL    -0.04712880037998272
+    Attrib age=46-65    -5.587003274887854
+    Attrib age=66-85    -5.615403016991928
+    Attrib age=18-25    -5.71867310213315
+    Attrib age=26-45    -5.608580680597457
+    Attrib age=85+    -5.895630356830963
+    Attrib race=WHITE    1.012361392079642
+    Attrib race=ASIAN    -25.46814439773063
+    Attrib race=OTHER    -7.104504384077066
+    Attrib race=UNKNOWN    -12.064653066347699
+    Attrib race=BLACK    2.6493151609430314
+    Attrib race=HISPANIC/LATINO    2.911131279926888
+Class False
+    Input
+    Node 0
+Class True
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       60491               74.4166 %
+Incorrectly Classified Instances     20796               25.5834 %
+Kappa statistic                          0.2363
+Mean absolute error                      0.508 
+Root mean squared error                  0.5275
+Relative absolute error                101.6091 %
+Root relative squared error            105.5022 %
+Total Number of Instances            81287     
+
+AUC: 0.6740211323275375 (95% CI: 0.674 - 0.674)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.792    0.501    0.891      0.792    0.838      0.246    0.674     0.891     False
+                 0.499    0.208    0.317      0.499    0.388      0.246    0.674     0.375     True
+Weighted Avg.    0.744    0.453    0.798      0.744    0.765      0.246    0.674     0.807     
+
+[[53900. 14190.]
+ [ 6606.  6591.]]
+
+Class 0 details
+Area under ROC: 0.6741336391657125
+False negatives: 14190.0
+True negatives: 6591.0
+False positives: 6606.0
+True positives: 53900.0
+
+Class 1 details
+Area under ROC: 0.6739996282817183
+False negatives: 6606.0
+True negatives: 53900.0
+False positives: 14190.0
+True positives: 6591.0
+

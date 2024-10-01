@@ -1,0 +1,165 @@
+Classifier: weka.classifiers.trees.J48
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.917582
+Evaluation time (HH:mm:ss): 0:04:47.872728
+
+J48 pruned tree
+------------------
+
+n_ed_visits <= 0.026786: False (18157.0/2198.0)
+n_ed_visits > 0.026786
+|   n_ed_visits <= 0.080357
+|   |   n_ed_visits <= 0.044643: False (807.0/286.0)
+|   |   n_ed_visits > 0.044643
+|   |   |   diagnosis_category = DIG: False (47.0/17.0)
+|   |   |   diagnosis_category = SYM
+|   |   |   |   race = WHITE: True (81.0/32.0)
+|   |   |   |   race = ASIAN: False (2.0)
+|   |   |   |   race = OTHER: False (4.0)
+|   |   |   |   race = UNKNOWN: True (0.0)
+|   |   |   |   race = BLACK
+|   |   |   |   |   age = 46-65
+|   |   |   |   |   |   n_ed_admissions <= 0.105263: True (19.0/8.0)
+|   |   |   |   |   |   n_ed_admissions > 0.105263: False (3.0)
+|   |   |   |   |   age = 66-85: True (10.0/2.0)
+|   |   |   |   |   age = 18-25: False (3.0/1.0)
+|   |   |   |   |   age = 26-45: False (12.0/2.0)
+|   |   |   |   |   age = 85+: False (0.0)
+|   |   |   |   race = HISPANIC/LATINO: False (12.0/5.0)
+|   |   |   diagnosis_category = CIR
+|   |   |   |   age = 46-65
+|   |   |   |   |   n_ed_admissions <= 0.157895: True (22.0/8.0)
+|   |   |   |   |   n_ed_admissions > 0.157895: False (7.0/1.0)
+|   |   |   |   age = 66-85: False (21.0/2.0)
+|   |   |   |   age = 18-25: False (1.0)
+|   |   |   |   age = 26-45: False (12.0/3.0)
+|   |   |   |   age = 85+: False (4.0/2.0)
+|   |   |   diagnosis_category = INJ
+|   |   |   |   race = WHITE: False (32.0/10.0)
+|   |   |   |   race = ASIAN: True (2.0)
+|   |   |   |   race = OTHER: True (1.0)
+|   |   |   |   race = UNKNOWN: False (1.0)
+|   |   |   |   race = BLACK
+|   |   |   |   |   n_ed_admissions <= 0.131579: True (16.0/4.0)
+|   |   |   |   |   n_ed_admissions > 0.131579: False (2.0)
+|   |   |   |   race = HISPANIC/LATINO: False (6.0/1.0)
+|   |   |   diagnosis_category = MUS
+|   |   |   |   age = 46-65: False (26.0/10.0)
+|   |   |   |   age = 66-85
+|   |   |   |   |   n_ed_visits <= 0.053571: False (4.0/1.0)
+|   |   |   |   |   n_ed_visits > 0.053571: True (7.0)
+|   |   |   |   age = 18-25: False (1.0)
+|   |   |   |   age = 26-45: False (8.0/2.0)
+|   |   |   |   age = 85+: False (1.0)
+|   |   |   diagnosis_category = BLD
+|   |   |   |   n_ed_visits <= 0.053571: True (4.0/1.0)
+|   |   |   |   n_ed_visits > 0.053571: False (8.0/3.0)
+|   |   |   diagnosis_category = RSP
+|   |   |   |   n_ed_admissions <= 0.052632: False (10.0/1.0)
+|   |   |   |   n_ed_admissions > 0.052632
+|   |   |   |   |   race = WHITE
+|   |   |   |   |   |   age = 46-65
+|   |   |   |   |   |   |   n_ed_visits <= 0.0625: False (2.0)
+|   |   |   |   |   |   |   n_ed_visits > 0.0625: True (3.0)
+|   |   |   |   |   |   age = 66-85: True (6.0)
+|   |   |   |   |   |   age = 18-25: True (0.0)
+|   |   |   |   |   |   age = 26-45: True (0.0)
+|   |   |   |   |   |   age = 85+: True (0.0)
+|   |   |   |   |   race = ASIAN: True (0.0)
+|   |   |   |   |   race = OTHER: False (2.0)
+|   |   |   |   |   race = UNKNOWN: True (0.0)
+|   |   |   |   |   race = BLACK
+|   |   |   |   |   |   n_ed_visits <= 0.053571: False (2.0)
+|   |   |   |   |   |   n_ed_visits > 0.053571: True (8.0/2.0)
+|   |   |   |   |   race = HISPANIC/LATINO: True (4.0/1.0)
+|   |   |   diagnosis_category = MBD
+|   |   |   |   n_ed_visits <= 0.0625
+|   |   |   |   |   age = 46-65
+|   |   |   |   |   |   race = WHITE: True (7.0/1.0)
+|   |   |   |   |   |   race = ASIAN: True (0.0)
+|   |   |   |   |   |   race = OTHER: True (0.0)
+|   |   |   |   |   |   race = UNKNOWN: True (0.0)
+|   |   |   |   |   |   race = BLACK
+|   |   |   |   |   |   |   n_ed_admissions <= 0.026316: True (2.0)
+|   |   |   |   |   |   |   n_ed_admissions > 0.026316: False (6.0/1.0)
+|   |   |   |   |   |   race = HISPANIC/LATINO: True (1.0)
+|   |   |   |   |   age = 66-85: True (1.0)
+|   |   |   |   |   age = 18-25: False (4.0)
+|   |   |   |   |   age = 26-45: False (22.0/8.0)
+|   |   |   |   |   age = 85+: False (0.0)
+|   |   |   |   n_ed_visits > 0.0625: True (20.0/2.0)
+|   |   |   diagnosis_category = END: True (27.0/11.0)
+|   |   |   diagnosis_category = NVS
+|   |   |   |   age = 46-65: True (13.0/5.0)
+|   |   |   |   age = 66-85: False (2.0/1.0)
+|   |   |   |   age = 18-25: False (0.0)
+|   |   |   |   age = 26-45: False (18.0/4.0)
+|   |   |   |   age = 85+: False (2.0/1.0)
+|   |   |   diagnosis_category = FAC: True (2.0)
+|   |   |   diagnosis_category = GEN
+|   |   |   |   age = 46-65
+|   |   |   |   |   n_ed_admissions <= 0.078947: True (5.0)
+|   |   |   |   |   n_ed_admissions > 0.078947: False (5.0)
+|   |   |   |   age = 66-85
+|   |   |   |   |   n_ed_visits <= 0.053571: True (10.0/3.0)
+|   |   |   |   |   n_ed_visits > 0.053571: False (3.0)
+|   |   |   |   age = 18-25: False (1.0)
+|   |   |   |   age = 26-45: False (6.0/2.0)
+|   |   |   |   age = 85+: True (1.0)
+|   |   |   diagnosis_category = EYE: False (1.0)
+|   |   |   diagnosis_category = SKN
+|   |   |   |   age = 46-65
+|   |   |   |   |   n_ed_visits <= 0.0625: True (3.0/1.0)
+|   |   |   |   |   n_ed_visits > 0.0625: False (3.0)
+|   |   |   |   age = 66-85: False (2.0)
+|   |   |   |   age = 18-25: True (0.0)
+|   |   |   |   age = 26-45: True (9.0/3.0)
+|   |   |   |   age = 85+: True (2.0)
+|   |   |   diagnosis_category = PRG: True (3.0/1.0)
+|   |   |   diagnosis_category = INF: False (3.0/1.0)
+|   |   |   diagnosis_category = EAR: False (1.0)
+|   |   |   diagnosis_category = NEO: False (2.0)
+|   |   |   diagnosis_category = MAL: False (0.0)
+|   |   |   diagnosis_category = PNL: False (0.0)
+|   n_ed_visits > 0.080357: True (552.0/144.0)
+
+Number of Leaves  : 	88
+
+Size of the tree : 	117
+
+
+
+Correctly Classified Instances       69126               85.0394 %
+Incorrectly Classified Instances     12161               14.9606 %
+Kappa statistic                          0.2151
+Mean absolute error                      0.2393
+Root mean squared error                  0.3515
+Relative absolute error                 88.9942 %
+Root relative squared error             95.3174 %
+Total Number of Instances            81287     
+
+AUC: 0.6114119819948919 (95% CI: 0.611 - 0.612)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.983    0.832    0.859      0.983    0.917      0.278    0.611     0.870     False
+                 0.168    0.017    0.652      0.168    0.267      0.278    0.611     0.290     True
+Weighted Avg.    0.850    0.700    0.825      0.850    0.811      0.278    0.611     0.776     
+
+[[66908.  1182.]
+ [10979.  2218.]]
+
+Class 0 details
+Area under ROC: 0.6114542353220662
+False negatives: 1182.0
+True negatives: 2218.0
+False positives: 10979.0
+True positives: 66908.0
+
+Class 1 details
+Area under ROC: 0.6114542353220662
+False negatives: 10979.0
+True negatives: 66908.0
+False positives: 1182.0
+True positives: 2218.0
+

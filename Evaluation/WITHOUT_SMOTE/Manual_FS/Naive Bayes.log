@@ -1,0 +1,99 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.047898
+Evaluation time (HH:mm:ss): 0:04:33.879073
+
+Naive Bayes Classifier
+
+                              Class
+Attribute                     False    True
+                             (0.84)  (0.16)
+============================================
+gender
+  F                           9304.0  1611.0
+  M                           7642.0  1566.0
+  [total]                    16946.0  3177.0
+
+separation_mode
+  admitted                    6184.0  1333.0
+  discharged                 10181.0  1658.0
+  left without being seen      457.0   168.0
+  expired/other                126.0    20.0
+  [total]                    16948.0  3179.0
+
+diagnosis_category
+  DIG                         1247.0   255.0
+  SYM                         4141.0   873.0
+  CIR                         1916.0   285.0
+  INJ                         2832.0   353.0
+  MUS                         1421.0   259.0
+  BLD                          157.0    46.0
+  RSP                          876.0   168.0
+  MBD                          945.0   296.0
+  END                          334.0    80.0
+  NVS                          897.0   154.0
+  FAC                          166.0    21.0
+  GEN                          840.0   192.0
+  EYE                          155.0    14.0
+  SKN                          488.0   117.0
+  PRG                          274.0    33.0
+  INF                          157.0    30.0
+  EAR                           92.0    11.0
+  NEO                           24.0     4.0
+  MAL                            1.0     3.0
+  PNL                            1.0     1.0
+  [total]                    16964.0  3195.0
+
+age
+  46-65                       5360.0  1209.0
+  66-85                       3839.0   782.0
+  18-25                       2205.0   213.0
+  26-45                       4558.0   763.0
+  85+                          987.0   213.0
+  [total]                    16949.0  3180.0
+
+triage_category
+  three                       9202.0  1823.0
+  two                         5540.0  1045.0
+  four                        1253.0   164.0
+  one                          904.0   144.0
+  five                          50.0     4.0
+  [total]                    16949.0  3180.0
+
+
+
+
+Correctly Classified Instances       68080               83.7526 %
+Incorrectly Classified Instances     13207               16.2474 %
+Kappa statistic                          0.0001
+Mean absolute error                      0.2641
+Root mean squared error                  0.3656
+Relative absolute error                 98.2143 %
+Root relative squared error             99.1308 %
+Total Number of Instances            81287     
+
+AUC: 0.5997646972201485 (95% CI: 0.600 - 0.600)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.838      1.000    0.912      0.001    0.600     0.879     False
+                 0.000    0.000    0.188      0.000    0.000      0.001    0.600     0.224     True
+Weighted Avg.    0.838    0.837    0.732      0.838    0.764      0.001    0.600     0.773     
+
+[[6.8077e+04 1.3000e+01]
+ [1.3194e+04 3.0000e+00]]
+
+Class 0 details
+Area under ROC: 0.5997661881770328
+False negatives: 13.0
+True negatives: 3.0
+False positives: 13194.0
+True positives: 68077.0
+
+Class 1 details
+Area under ROC: 0.5997661881770328
+False negatives: 13194.0
+True negatives: 68077.0
+False positives: 13.0
+True positives: 3.0
+

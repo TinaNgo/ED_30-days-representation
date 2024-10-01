@@ -1,0 +1,80 @@
+Classifier: weka.classifiers.bayes.BayesNet
+Options: default
+Classifier build time (HH:mm:ss): 1:55:17.433816
+Evaluation time (HH:mm:ss): 0:05:34.046488
+
+Bayes Network Classifier
+Using ADTree
+#attributes=29 #classindex=28
+Network structure (nodes followed by parents)
+gender(2): revisited 
+race(6): revisited 
+separation_mode(4): revisited 
+arrival_mode(3): revisited 
+diagnosis_category(20): revisited 
+chiefcom_chest_pain(2): revisited 
+chiefcom_abdominal_pain(2): revisited 
+chiefcom_headache(2): revisited 
+chiefcom_shortness_of_breath(2): revisited 
+chiefcom_back_pain(2): revisited 
+chiefcom_cough(2): revisited 
+chiefcom_nausea_vomiting(2): revisited 
+chiefcom_fever_chills(2): revisited 
+chiefcom_syncope(2): revisited 
+chiefcom_dizziness(2): revisited 
+age(5): revisited 
+presentation_time(3): revisited 
+ED_LOS(4): revisited 
+triage_category(5): revisited 
+triage_pain(11): revisited 
+n_ed_visits(52): revisited 
+n_ed_admissions(26): revisited 
+triage_temp(154): revisited 
+triage_heartrate(219): revisited 
+triage_resprate(50): revisited 
+triage_o2sat(29): revisited 
+triage_sbp(271): revisited 
+triage_dbp(195): revisited 
+revisited(2): 
+LogScore Bayes: -2.0848035762493044E7
+LogScore BDeu: -2.0862134031108823E7
+LogScore MDL: -2.0860906542310223E7
+LogScore ENTROPY: -2.084701830559099E7
+LogScore AIC: -2.084912130559099E7
+
+
+
+Correctly Classified Instances       68135               83.8203 %
+Incorrectly Classified Instances     13152               16.1797 %
+Kappa statistic                          0.0079
+Mean absolute error                      0.1615
+Root mean squared error                  0.3994
+Relative absolute error                 32.3024 %
+Root relative squared error             79.8882 %
+Total Number of Instances            81287     
+
+AUC: 0.668620205878459 (95% CI: 0.668 - 0.669)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.995    0.838      1.000    0.912      0.053    0.669     0.900     False
+                 0.005    0.000    0.753      0.005    0.010      0.053    0.669     0.338     True
+Weighted Avg.    0.838    0.833    0.824      0.838    0.765      0.053    0.669     0.809     
+
+[[6.8068e+04 2.2000e+01]
+ [1.3130e+04 6.7000e+01]]
+
+Class 0 details
+Area under ROC: 0.6686478621196491
+False negatives: 22.0
+True negatives: 67.0
+False positives: 13130.0
+True positives: 68068.0
+
+Class 1 details
+Area under ROC: 0.6686478621196491
+False negatives: 13130.0
+True negatives: 68068.0
+False positives: 22.0
+True positives: 67.0
+

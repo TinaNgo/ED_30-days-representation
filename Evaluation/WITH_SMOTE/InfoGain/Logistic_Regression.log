@@ -1,0 +1,120 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:03.264567
+Evaluation time (HH:mm:ss): 0:05:05.156544
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                               Class
+Variable                       False
+====================================
+n_ed_visits                 -24.2004
+n_ed_admissions              -3.3907
+diagnosis_category=DIG        0.1311
+diagnosis_category=SYM        0.0834
+diagnosis_category=CIR         0.496
+diagnosis_category=INJ        0.4286
+diagnosis_category=MUS         0.217
+diagnosis_category=BLD       -0.0363
+diagnosis_category=RSP        0.2947
+diagnosis_category=MBD        -0.009
+diagnosis_category=END        0.2147
+diagnosis_category=NVS        0.3673
+diagnosis_category=FAC        1.4372
+diagnosis_category=GEN        0.0271
+diagnosis_category=EYE        1.3568
+diagnosis_category=SKN       -0.1353
+diagnosis_category=PRG        0.3813
+diagnosis_category=INF        0.5401
+diagnosis_category=EAR        1.8843
+diagnosis_category=NEO        2.3879
+diagnosis_category=MAL    -3455.7026
+diagnosis_category=PNL             0
+age=46-65                    -0.0283
+age=66-85                    -0.0982
+age=18-25                     0.3041
+age=26-45                     0.0691
+age=85+                      -0.2803
+race=WHITE                   -0.0454
+race=ASIAN                    0.2981
+race=OTHER                    0.3427
+race=UNKNOWN                  4.3832
+race=BLACK                   -0.1889
+race=HISPANIC/LATINO         -0.1591
+Intercept                     0.2528
+
+
+Odds Ratios...
+                               Class
+Variable                       False
+====================================
+n_ed_visits                        0
+n_ed_admissions               0.0337
+diagnosis_category=DIG          1.14
+diagnosis_category=SYM         1.087
+diagnosis_category=CIR        1.6421
+diagnosis_category=INJ        1.5351
+diagnosis_category=MUS        1.2423
+diagnosis_category=BLD        0.9644
+diagnosis_category=RSP        1.3428
+diagnosis_category=MBD        0.9911
+diagnosis_category=END        1.2395
+diagnosis_category=NVS        1.4438
+diagnosis_category=FAC        4.2089
+diagnosis_category=GEN        1.0275
+diagnosis_category=EYE        3.8837
+diagnosis_category=SKN        0.8734
+diagnosis_category=PRG        1.4642
+diagnosis_category=INF        1.7163
+diagnosis_category=EAR         6.582
+diagnosis_category=NEO       10.8901
+diagnosis_category=MAL             0
+diagnosis_category=PNL             1
+age=46-65                     0.9721
+age=66-85                     0.9064
+age=18-25                     1.3555
+age=26-45                     1.0715
+age=85+                       0.7555
+race=WHITE                    0.9556
+race=ASIAN                    1.3472
+race=OTHER                    1.4087
+race=UNKNOWN                 80.0917
+race=BLACK                    0.8279
+race=HISPANIC/LATINO          0.8529
+
+
+
+Correctly Classified Instances       60759               74.7463 %
+Incorrectly Classified Instances     20528               25.2537 %
+Kappa statistic                          0.2497
+Mean absolute error                      0.4286
+Root mean squared error                  0.4543
+Relative absolute error                 85.7118 %
+Root relative squared error             90.8684 %
+Total Number of Instances            81287     
+
+AUC: 0.7032271326119796 (95% CI: 0.703 - 0.703)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.792    0.483    0.894      0.792    0.840      0.260    0.703     0.908     False
+                 0.517    0.208    0.325      0.517    0.399      0.260    0.703     0.400     True
+Weighted Avg.    0.747    0.438    0.802      0.747    0.769      0.260    0.703     0.825     
+
+[[53938. 14152.]
+ [ 6376.  6821.]]
+
+Class 0 details
+Area under ROC: 0.7032290034897472
+False negatives: 14152.0
+True negatives: 6821.0
+False positives: 6376.0
+True positives: 53938.0
+
+Class 1 details
+Area under ROC: 0.7032290034897472
+False negatives: 6376.0
+True negatives: 53938.0
+False positives: 14152.0
+True positives: 6821.0
+

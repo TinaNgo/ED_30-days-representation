@@ -1,0 +1,64 @@
+Classifier: weka.classifiers.rules.OneR
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.075985
+Evaluation time (HH:mm:ss): 0:04:18.765257
+
+diagnosis_category:
+	DIG	-> False
+	SYM	-> True
+	CIR	-> False
+	INJ	-> False
+	MUS	-> True
+	BLD	-> True
+	RSP	-> False
+	MBD	-> True
+	END	-> True
+	NVS	-> False
+	FAC	-> False
+	GEN	-> True
+	EYE	-> False
+	SKN	-> True
+	PRG	-> False
+	INF	-> False
+	EAR	-> False
+	NEO	-> False
+	MAL	-> True
+	PNL	-> False
+(18827/33888 instances correct)
+
+
+
+Correctly Classified Instances       41829               51.4584 %
+Incorrectly Classified Instances     39458               48.5416 %
+Kappa statistic                          0.0392
+Mean absolute error                      0.4854
+Root mean squared error                  0.6967
+Relative absolute error                 97.0832 %
+Root relative squared error            139.3436 %
+Total Number of Instances            81287     
+
+AUC: 0.536393193001341 (95% CI: 0.536 - 0.537)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.504    0.431    0.858      0.504    0.635      0.054    0.536     0.848     False
+                 0.569    0.496    0.182      0.569    0.276      0.054    0.536     0.173     True
+Weighted Avg.    0.515    0.442    0.748      0.515    0.577      0.054    0.536     0.738     
+
+[[34325. 33765.]
+ [ 5693.  7504.]]
+
+Class 0 details
+Area under ROC: 0.5363631416963225
+False negatives: 33765.0
+True negatives: 7504.0
+False positives: 5693.0
+True positives: 34325.0
+
+Class 1 details
+Area under ROC: 0.5363631416963225
+False negatives: 5693.0
+True negatives: 34325.0
+False positives: 33765.0
+True positives: 7504.0
+
