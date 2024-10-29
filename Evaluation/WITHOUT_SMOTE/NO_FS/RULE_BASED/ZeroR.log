@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.rules.ZeroR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.280028
-Evaluation time (HH:mm:ss): 0:03:47.803729
+Classifier build time (HH:mm:ss): 0:00:00.057391
+Evaluation time (HH:mm:ss): 0:01:47.790347
 
 ZeroR predicts class value: False
 
@@ -9,8 +9,8 @@ ZeroR predicts class value: False
 Correctly Classified Instances       68090               83.7649 %
 Incorrectly Classified Instances     13197               16.2351 %
 Kappa statistic                          0     
-Mean absolute error                      0.5   
-Root mean squared error                  0.5   
+Mean absolute error                      0.272 
+Root mean squared error                  0.3688
 Relative absolute error                100      %
 Root relative squared error            100      %
 Total Number of Instances            81287     
@@ -39,3 +39,4 @@ False negatives: 13197.0
 True negatives: 68090.0
 False positives: 0.0
 True positives: 0.0
+

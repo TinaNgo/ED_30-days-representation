@@ -18,6 +18,27 @@ python3 ED_preprocessing.py
 python3 discretise_normalised.py
 ```
 
-## Generate full features train and test set, with and without SMOTE_NC applied to the training set 
+fully_processed_ED.csv is the result dataset.
+
+## Generate full features train and test set
+This split fully_processed_ED.csv into train-test set (80-20).
+
+```bash
+python3 get_train_test.py
+```
+
+## Perform feature selections on the train set
+I did this using Weka, but it could also be done via code.
+
+## Generate the balanced train sets using SMOTE-NC or SMOTE-N
+SMOTE-NC for datasets containing both nominal and continuous features
+SMOTE-N for datasets containing only nominal features
+
+```bash
+python3 apply_smotenc.py
+python3 apply_smoten.py
+```
+
+
 ## Next step
-fully_processed_ED.csv is the final dataset.
+.

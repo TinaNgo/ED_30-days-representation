@@ -1,0 +1,91 @@
+Classifier: weka.classifiers.functions.SMO
+Options: default
+Classifier build time (HH:mm:ss): 0:01:25.984688
+Evaluation time (HH:mm:ss): 0:08:11.956379
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: False, True
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) gender=M
+ +       0      * (normalized) separation_mode=admitted
+ +       0.0003 * (normalized) separation_mode=discharged
+ +       0.0002 * (normalized) separation_mode=left without being seen
+ +      -0.0005 * (normalized) separation_mode=expired/other
+ +      -0.1047 * (normalized) diagnosis_category=DIG
+ +      -0.1054 * (normalized) diagnosis_category=SYM
+ +      -0.1053 * (normalized) diagnosis_category=CIR
+ +      -0.105  * (normalized) diagnosis_category=INJ
+ +      -0.1049 * (normalized) diagnosis_category=MUS
+ +      -0.1047 * (normalized) diagnosis_category=BLD
+ +      -0.1056 * (normalized) diagnosis_category=RSP
+ +      -0.1047 * (normalized) diagnosis_category=MBD
+ +      -0.1057 * (normalized) diagnosis_category=END
+ +      -0.105  * (normalized) diagnosis_category=NVS
+ +      -0.105  * (normalized) diagnosis_category=FAC
+ +      -0.105  * (normalized) diagnosis_category=GEN
+ +      -0.105  * (normalized) diagnosis_category=EYE
+ +      -0.1056 * (normalized) diagnosis_category=SKN
+ +      -0.1055 * (normalized) diagnosis_category=PRG
+ +      -0.1057 * (normalized) diagnosis_category=INF
+ +      -0.1058 * (normalized) diagnosis_category=EAR
+ +      -0.1058 * (normalized) diagnosis_category=NEO
+ +       1.8943 * (normalized) diagnosis_category=MAL
+ +       0.0001 * (normalized) age=46-65
+ +      -0      * (normalized) age=66-85
+ +      -0.0001 * (normalized) age=18-25
+ +       0.0001 * (normalized) age=26-45
+ +      -0.0001 * (normalized) age=85+
+ +       0.0001 * (normalized) triage_category=three
+ +      -0      * (normalized) triage_category=two
+ +       0.0003 * (normalized) triage_category=four
+ +       0.0003 * (normalized) triage_category=one
+ +      -0.0006 * (normalized) triage_category=five
+ -       0.895 
+
+Number of kernel evaluations: 152417804 (22.968% cached)
+
+
+
+
+Correctly Classified Instances       68080               83.7526 %
+Incorrectly Classified Instances     13207               16.2474 %
+Kappa statistic                          0.0001
+Mean absolute error                      0.1625
+Root mean squared error                  0.4031
+Relative absolute error                 60.4119 %
+Root relative squared error            109.2952 %
+Total Number of Instances            81287     
+
+AUC: 0.5000175823950779 (95% CI: 0.500 - 0.500)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.838      1.000    0.912      0.001    0.500     0.838     False
+                 0.000    0.000    0.188      0.000    0.000      0.001    0.500     0.162     True
+Weighted Avg.    0.838    0.837    0.732      0.838    0.764      0.001    0.500     0.728     
+
+[[6.8077e+04 1.3000e+01]
+ [1.3194e+04 3.0000e+00]]
+
+Class 0 details
+Area under ROC: 0.5000182003072768
+False negatives: 13.0
+True negatives: 3.0
+False positives: 13194.0
+True positives: 68077.0
+
+Class 1 details
+Area under ROC: 0.5000182003072768
+False negatives: 13194.0
+True negatives: 68077.0
+False positives: 13.0
+True positives: 3.0
+

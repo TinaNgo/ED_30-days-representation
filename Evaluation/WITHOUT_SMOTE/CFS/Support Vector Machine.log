@@ -1,0 +1,60 @@
+Classifier: weka.classifiers.functions.SMO
+Options: default
+Classifier build time (HH:mm:ss): 0:00:01.288241
+Evaluation time (HH:mm:ss): 0:04:17.711147
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: False, True
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0249 * (normalized) chiefcom_syncope=True
+ +       5.7708 * (normalized) n_ed_visits
+ +      -0.9981 * (normalized) n_ed_admissions
+ -       1.0521
+
+Number of kernel evaluations: 961817 (66.765% cached)
+
+
+
+
+Correctly Classified Instances       68548               84.3284 %
+Incorrectly Classified Instances     12739               15.6716 %
+Kappa statistic                          0.063 
+Mean absolute error                      0.1567
+Root mean squared error                  0.3959
+Relative absolute error                 58.2712 %
+Root relative squared error            107.3412 %
+Total Number of Instances            81287     
+
+AUC: 0.5193522665210099 (95% CI: 0.519 - 0.519)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.999    0.960    0.843      0.999    0.914      0.168    0.519     0.843     False
+                 0.040    0.001    0.888      0.040    0.076      0.168    0.519     0.191     True
+Weighted Avg.    0.843    0.805    0.850      0.843    0.778      0.168    0.519     0.737     
+
+[[6.8024e+04 6.6000e+01]
+ [1.2673e+04 5.2400e+02]]
+
+Class 0 details
+Area under ROC: 0.5193683442276437
+False negatives: 66.0
+True negatives: 524.0
+False positives: 12673.0
+True positives: 68024.0
+
+Class 1 details
+Area under ROC: 0.5193683442276437
+False negatives: 12673.0
+True negatives: 68024.0
+False positives: 66.0
+True positives: 524.0
+

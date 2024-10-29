@@ -1,0 +1,89 @@
+Classifier: weka.classifiers.functions.SMO
+Options: default
+Classifier build time (HH:mm:ss): 0:09:13.032415
+Evaluation time (HH:mm:ss): 0:07:53.848566
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: False, True
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         5.7645 * (normalized) n_ed_visits
+ +      -0.9748 * (normalized) n_ed_admissions
+ +      -0.0656 * (normalized) diagnosis_category=DIG
+ +      -0.0656 * (normalized) diagnosis_category=SYM
+ +      -0.0919 * (normalized) diagnosis_category=CIR
+ +      -0.0655 * (normalized) diagnosis_category=INJ
+ +      -0.0656 * (normalized) diagnosis_category=MUS
+ +      -0.0654 * (normalized) diagnosis_category=BLD
+ +      -0.0654 * (normalized) diagnosis_category=RSP
+ +      -0.0397 * (normalized) diagnosis_category=MBD
+ +      -0.0654 * (normalized) diagnosis_category=END
+ +      -0.0916 * (normalized) diagnosis_category=NVS
+ +      -0.1175 * (normalized) diagnosis_category=FAC
+ +      -0.0655 * (normalized) diagnosis_category=GEN
+ +      -0.0654 * (normalized) diagnosis_category=EYE
+ +      -0.0654 * (normalized) diagnosis_category=SKN
+ +      -0.0656 * (normalized) diagnosis_category=PRG
+ +      -0.0656 * (normalized) diagnosis_category=INF
+ +      -0.0655 * (normalized) diagnosis_category=EAR
+ +      -0.1176 * (normalized) diagnosis_category=NEO
+ +       1.3099 * (normalized) diagnosis_category=MAL
+ +       0      * (normalized) age=46-65
+ +       0.0002 * (normalized) age=66-85
+ +       0.0001 * (normalized) age=18-25
+ +      -0.0002 * (normalized) age=26-45
+ +      -0.0001 * (normalized) age=85+
+ +       0.0041 * (normalized) race=WHITE
+ +       0.0044 * (normalized) race=ASIAN
+ +       0.0046 * (normalized) race=OTHER
+ +       0.0039 * (normalized) race=UNKNOWN
+ +       0.0044 * (normalized) race=BLACK
+ +      -0.0215 * (normalized) race=HISPANIC/LATINO
+ -       0.9911
+
+Number of kernel evaluations: 904473517 (45.909% cached)
+
+
+
+
+Correctly Classified Instances       68541               84.3198 %
+Incorrectly Classified Instances     12746               15.6802 %
+Kappa statistic                          0.0635
+Mean absolute error                      0.1568
+Root mean squared error                  0.396 
+Relative absolute error                 58.3032 %
+Root relative squared error            107.3707 %
+Total Number of Instances            81287     
+
+AUC: 0.5195575946838946 (95% CI: 0.519 - 0.520)
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.999    0.960    0.843      0.999    0.914      0.167    0.520     0.843     False
+                 0.040    0.001    0.868      0.040    0.077      0.167    0.520     0.191     True
+Weighted Avg.    0.843    0.804    0.847      0.843    0.778      0.167    0.520     0.737     
+
+[[68009.    81.]
+ [12665.   532.]]
+
+Class 0 details
+Area under ROC: 0.5195612950837648
+False negatives: 81.0
+True negatives: 532.0
+False positives: 12665.0
+True positives: 68009.0
+
+Class 1 details
+Area under ROC: 0.5195612950837648
+False negatives: 12665.0
+True negatives: 68009.0
+False positives: 81.0
+True positives: 532.0
+
