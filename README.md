@@ -28,7 +28,17 @@ python3 get_train_test.py
 ```
 
 ## Perform feature selections on the train set
-I did this using Weka, but it could also be done via code.
+
+- CFS
+- Information Gain
+- Manual Feature Selection
+
+
+CFS and Information Gain can be performed using Weka, but it can also be done via code. After having the list of selected features, run the code below. \<FS method\>_col_list arrays in this file script are the lists of selected features for each FS method.
+
+```bash
+python3 make_FS_set.py
+```
 
 ## Generate the balanced train sets using SMOTE-NC or SMOTE-N
 SMOTE-NC for datasets containing both nominal and continuous features
@@ -40,5 +50,11 @@ python3 apply_smoten.py
 ```
 
 
-## Next step
-.
+## Convert CSV files to ARFF files
+There would be a comparability issue between the train sets and the test sets when evaluating using Weka if we kept the file in CSV format. So we converted all files to ARFF format.
+
+```bash
+python3 csv_to_arff.py <config file>
+```
+
+The config files can be found in ARFF_converter. 
